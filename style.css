@@ -16,7 +16,8 @@
 
 body {
   line-height: 1.5;
-  font-family: "Roboto";
+  font-family: 'Roboto', sans-serif;
+
 }
 
 
@@ -34,6 +35,7 @@ body {
 
 .bg-secondary{
   background: #0F2027;
+
 }
 
 /* NAVBAR */
@@ -233,3 +235,76 @@ body {
 
 
 /* CONTACT */
+form {
+  font-family: 'Roboto', sans-serif;
+  display: flex;
+  background-color:#203A43;
+  flex-direction: column;
+  align-items: center;
+}
+input[type=text], input[type=email], select, textarea { 
+	font-weight: bold;
+  font-size: 0.75rem;
+  width: 70%; 
+  padding: 12px;   
+  border: 3px; 
+  border-radius: 4px; 
+	margin-top: 6px;
+  margin-bottom: 16px; 
+  resize: vertical;
+  white-space: normal;
+}
+
+.contact {
+	color: white;
+  font-size: 0.75rem;
+}
+
+.buttonSend {
+	background: #0F2027;
+	border: none;
+	color: white;
+	font-size: 0.75rem;
+	height: 30px;
+	padding: initial;
+  width: 70px;
+  text-align: center;
+  margin-bottom: 30px;
+  cursor: pointer;
+}
+
+
+/* FOOTER */
+footer {
+  display: flex;
+  justify-content: space-evenly;
+  background-color: #0F2027;
+}
+
+footer a {
+  display: flex;
+  background-color:#0F2027;
+  color: white;
+  padding: 7px 0;
+  flex-direction: column;
+  text-decoration: none;
+  font-size: 0.75rem;
+}
+
+.rightFooter {
+  font-weight: bold;
+}
+
+@media screen and (max-width: 768px) {
+
+  footer {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  footer a {
+    text-align: center;
+  }
+
+}
