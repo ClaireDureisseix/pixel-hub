@@ -121,3 +121,10 @@ body {
 
 
 /* GALLERY */
+
+.main-container {
+  display: grid;
+}
+.item img {
+  width: 100vw;
+}
