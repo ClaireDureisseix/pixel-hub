@@ -1,42 +1,56 @@
 <html lang="en">
-  
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Pixel Hub</title>
-  </head>
 
-  <!--  MOBILE FIRST ! -->
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/style.css" />
+  <title>Pixel Hub</title>
+</head>
 
+<!-- MOBILE FIRST ! -->
+
+<body>
   <header>
+    <!-- NAVBAR desktop -->
 
-    <!-- NAVBAR -->
+    <!-- NAVBAR mobile -->
+    <div id="contact" class="overlay">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeContact()"> <img src="img/icone/gdreturn.png"
+          alt="close"></a>
+      <div class="overlay-content">
+        <div>
+          <p>link 1</p>
+        </div>
+      </div>
+    </div>
 
+    <div class="contactBtn">
+      <span id="contactBtnJs" onclick="openContact()"> Nous contacter</span>
+    </div>
     <!-- NAVBAR END -->
+
   </header>
 
-  <body>
+  <!--CAROUSEL-->
 
-    <!-- CAROUSEL  -->
-
-    <!-- CAROUSEL END -->
+  <!-- CAROUSEL END -->
 
 
-    <!-- CONCEPT -->
+  <!-- CONCEPT -->
 
-    <!-- CONCEPT END -->
-
-
-    <!-- PARTNERS -->
-
-    <!-- PARTNERS END -->
+  <!-- CONCEPT END -->
 
 
-    <!-- CONTACT -->
+  <!-- PARTNERS -->
 
-    <!-- CONTACT END  -->
-      
-  </body>
+  <!-- PARTNERS END -->
+
+
+  <!-- CONTACT -->
+
+  <!-- CONTACT END  -->
+  <script src="js/index.js"></script>
+</body>
 
 </html>
