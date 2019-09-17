@@ -127,20 +127,39 @@ body {
   width: 100%;
 }
 .bloc-photograph {
+  background: #2c5364;
   display: grid;
-  grid-template-columns: 30%;
-  grid-template-rows: 1fr 1fr 1fr;
-  grid-column-gap: 10px;
+  grid-template-columns: 46.92% 1fr;
+  grid-template-rows: 100% 100% 1fr auto;
+  grid-gap: 10px;
+  overflow: hidden;
 }
 .name {
-  padding: 20px 0;
+  padding: 20px 20px;
   grid-column-end: span 2;
+  color: #FFF;
 }
 .photo-item-portrait {
-  grid-column-start: span 1;
+  grid-column-start: 1;
+  grid-row-start: span 2;
+  align-self: center;
 }
 .desktop-img {
   display: none;
+}
+.photo-item2 {
+  grid-column-start: 2; 
+  grid-row-start: 3;
+}
+
+.gal-info {
+  grid-row-start: 4;
+  grid-column-start: span 2;
+  padding: 15px 15px;
+  text-align: right;
+  color: #FFF;
+  font-weight: 200;
+  font-size: 0.8rem;
 }
 /* @media screen and (min-width: 761px) {
   .main-container {
