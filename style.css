@@ -11,17 +11,53 @@
 }
 
 :root {
-  font-size: calc(1vw + 0.5em);
+  font-size: calc(vw + 0.7em);
 }
 
 body {
   line-height: 1.5;
 }
 
-/* NAVBAR */
-#contact {
-  bottom: 30%;
+/* NAVBAR DESKTOP */
+
+.menu-container {
+
+  color: #fff;
+  background-color: #2c5364;
+  padding: 20px 0;
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+
 }
+
+.menu {
+  width: 900px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.links {
+  display: flex;
+  justify-content: flex-end;
+
+}
+
+.links a {
+  color: white;
+}
+
+.login {
+  margin-left: 20px;
+}
+
+@media screen and (max-width: 766px) {
+  .menu-container {
+    display: none;
+  }
+}
+
+/* navbar mobile */
 
 .contactBtn img {
   width: 60px;
@@ -57,14 +93,12 @@ body {
 }
 
 .overlay {
-  height: 100%;
+  height: 0;
   width: 100%;
   position: fixed;
   z-index: 1000;
   top: 30%;
-  bottom: 0;
-  background-color: #0d2951;
-  background-color: hsla(356, 89%, 64%, 0.589);
+  background-color: #2c5364;
   overflow-x: hidden;
   transition: 0.5s;
 }
@@ -104,6 +138,15 @@ body {
   transform: rotate(270deg);
 }
 
+.overlay ul li a {
+  font-size: 1.4rem;
+}
+
+.phone {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
 
 
 @media screen and (min-width: 766px) {
@@ -121,4 +164,4 @@ body {
 /* PARTNERS */
 
 
-/* CONTACT */
+/* CONTACT *3

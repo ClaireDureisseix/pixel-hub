@@ -1,8 +1,8 @@
 // CONTACT
 function openContact() {
-  document.getElementById("contact").style.height = "100%";
+  document.getElementById("menu").style.height = "100%";
 }
 
 function closeContact() {
-  document.getElementById("contact").style.height = "0";
+  document.getElementById("menu").style.height = "0";
 }
