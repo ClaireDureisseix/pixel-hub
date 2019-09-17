@@ -19,24 +19,29 @@ body {
 }
 
 /* NAVBAR */
+#contact {
+  bottom: 30%;
+}
+
+.contactBtn img {
+  width: 60px;
+}
+
 .contactBtn {
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: calc(14px + 0.7vw);
   padding: 8px 10px 5px 10px;
   display: flex;
   right: 8px;
+  bottom: 8px;
   position: fixed;
   z-index: 200;
   cursor: pointer;
   transition: 0.2s linear all;
-  background-color: #bc9f55;
-  background-color: rgba(187, 158, 84, 0.8);
-  color: white;
+  border-radius: 120%;
+
 }
 
 .contactBtn:hover {
-  background-color: #0d2951;
-  background-color: rgba(13, 41, 82, 0.8);
+  background-color: #203A43;
 }
 
 .contactOn {
@@ -45,7 +50,7 @@ body {
 }
 
 .contactOn:hover {
-  background-color: #0d2951;
+  background-color: #203A43;
   transition: 0.2s linear all;
   bottom: 8px;
   color: white;
@@ -53,13 +58,13 @@ body {
 
 .overlay {
   height: 100%;
-  width: 0;
+  width: 100%;
   position: fixed;
   z-index: 1000;
-  top: 10%;
-  left: 8px;
+  top: 30%;
+  bottom: 0;
   background-color: #0d2951;
-  background-color: rgba(13, 41, 82, 0.8);
+  background-color: hsla(356, 89%, 64%, 0.589);
   overflow-x: hidden;
   transition: 0.5s;
 }
@@ -83,7 +88,7 @@ body {
 
 .overlay a:hover,
 .overlay a:focus {
-  color: #f1f1f1;
+  color: #203A43;
 }
 
 .overlay .closebtn {
@@ -91,20 +96,19 @@ body {
   top: 0;
   right: 5px;
   font-size: 50px;
+  transform: rotate(90deg);
 }
 
 .overlay .closebtn:hover {
   transition: 0.2s linear all;
-  transform: rotate(360deg);
+  transform: rotate(270deg);
 }
 
-.overlay a:hover {
-  color: #bc9f55;
-}
 
-@media screen and (min-width: 350px) {
-  .overlay {
-    max-width: 450px;
+
+@media screen and (min-width: 766px) {
+  .contactBtn {
+    display: none;
   }
 }
 
