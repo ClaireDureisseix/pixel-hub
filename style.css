@@ -13,6 +13,7 @@
 }
 body {
   line-height: 1.5;
+  font-family: 'Roboto', sans-serif;
 }
 
 /* NAVBAR */
@@ -28,3 +29,58 @@ body {
 
 
 /* CONTACT */
+form {
+  font-family: 'Roboto', sans-serif;
+  display: flex;
+  background-color:#203A43;
+  flex-direction: column;
+  align-items: center;
+}
+input[type=text], input[type=email], select, textarea { 
+	font-weight: bold;
+	font-size: 18px;
+  width: 70%; 
+  padding: 12px;   
+  border: 5px solid #ccc; 
+  border-radius: 4px; 
+	margin-top: 6px;
+  margin-bottom: 16px; 
+  resize: vertical;
+}
+
+.contact {
+	color: white;
+  font-size: 20px;
+}
+
+.buttonSend {
+	background: #0F2027;
+	border: none;
+	color: white;
+	font-size: 22px;
+	height: 30px;
+	padding: 0px 15px;
+  width: 70px;
+  text-align: center;
+}
+
+
+/* FOOTER */
+footer {
+  display: flex;
+  justify-content: space-evenly;
+  background-color: #0F2027;
+}
+
+footer a {
+  display: flex;
+  background-color:#0F2027;
+  color: white;
+  padding: 10px 0;
+  flex-direction: column;
+  text-decoration: none;
+}
+
+.rightFooter {
+  font-weight: bold;
+}
