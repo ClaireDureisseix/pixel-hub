@@ -29,6 +29,7 @@ body {
   color: white;
   padding: 20px;
   text-align: center;
+  font-size: 35px;
 }
 
 .bg-secondary{
@@ -165,6 +166,7 @@ body {
   font-size: 12px;
   padding: 10px 25px;
   text-align: justify;
+  white-space: normal;
 }
 
 .card-item {
