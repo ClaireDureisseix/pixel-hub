@@ -131,6 +131,9 @@ body {
 
 /* CONCEPT */
 
+.about-container{
+  height: max-content;
+}
 
 /* PARTNERS */
 
@@ -138,7 +141,6 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-  background: #2c5364;
   height: max-content;
   align-content: center;
   align-items: center;
