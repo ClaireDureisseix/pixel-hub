@@ -29,6 +29,7 @@ body {
   color: white;
   padding: 20px;
   text-align: center;
+  font-size: 35px;
 }
 
 .bg-secondary{
@@ -163,8 +164,9 @@ body {
 .img-description{
   position: relative;
   font-size: 12px;
-  padding: 10px;
+  padding: 10px 25px;
   text-align: justify;
+  white-space: normal;
 }
 
 .card-item {
@@ -175,6 +177,10 @@ body {
 .card-item > p {
   font-size: 14px;
   word-wrap: break-word;
+}
+
+.card-item > h4{
+  font-size: 18px;
 }
 
 @media screen and (min-width: 768px) {
