@@ -4,7 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="style.css" />
+  <link rel = "stylesheet" href = "style.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto&display=swap" />
   <title>Pixel Hub</title>
 </head>
 
@@ -62,15 +63,113 @@
 
 
   <!-- PARTNERS -->
+  <section class="bg-main">
+    <h2>OUR PARTNERS</h2>
+    <div class="card-container">
+      <div class="card">
+        <p class="img-description">
+          The pictures of Natalya are pretty much the exact same as her personnality: kind, powerful and straight-to-the-point. Her portraits are so intense that you can litteraly 
+          stay in front of them for hours. Want to learn this power? Join Natalya on her journey!
+        </p>
+        <img src="img/cards/natalya-letunova.jpeg" alt="">
+        <div class="card-item">
+          <h4><b>Natalya Letunova</b></h4>
+          <p>Portrait photographer</p>
+        </div>
+      </div>
+      <div class="card">
+        <p class="img-description">
+          Mael is a professional, strictly professional. Mael won't let you down and will pull you up straight to your big picture.
+          He is very aware of the theory and the practice. 
+        </p>
+        <img src="img/cards/mael-balland-card-france.jpg" alt="">
+        <div class="card-item">
+          <h4><b>Mael Balland</b></h4>
+          <p>Objects photographer</p>
+        </div>
+      </div>
+      <div class="card">
+        <p class="img-description">
+          Pablo is photographying nature and animals since 10 years from now. He is really capable of sitting 15 hours straight just to have the big shot.
+          Truly amazing human being, Pablo can show you all his methods and tricky-things to realize the perfect picture. Step in the world of Pablo and never regret it.
+        </p>
+        <img src="img/cards/pablo-garcia-saldana.jpeg" alt="">
+        <div class="card-item">
+          <h4><b>Pablo Garcia</b></h4>
+          <p>Nature photographer</p>
+        </div>
+      </div>
+      <div class="card">
+        <p class="img-description">
+          The beautiful straight lines of Patricks photographies are like a beautiful painting or a Wes Anderson's movie. Nothing is overflowing, everything is where it meant to be.
+          Patrick is a perfectionist and a great teacher. If you like architecture, Patrick can chow you places unknown to the entire world.
+        </p>
+        <img src="img/cards/patrick-hendry.jpeg" alt="">
+        <div class="card-item">
+          <h4><b>Patrick Hendry</b></h4>
+          <p>Architecture photographer</p>
+        </div>
+      </div>
+    </div>
+  </section>
 
   <!-- PARTNERS END -->
 
 
   <!-- CONTACT -->
+  <form>
 
+      <label class="contact">First Name</label>
+      <input type="text" id="fname" name="firstname" placeholder="Your name...">
+
+      <label class="contact">Last Name</label>
+      <input type="text" id="lname" name="lastname" placeholder="Your last name...">
+
+      <label class="contact">E-mail</label>
+      <input type="text" 
+      id="email"
+      name="email" 
+      placeholder="Your e-mail..." 
+      pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+      title="Your email adress is invalid">
+
+      <select id="select">
+        <option value="">--Choose the photograph you want to learn with--</option>
+        <option value="1">Christian Rosswag</option>
+        <option value="2">Joseph Barrientos</option>
+        <option value="3">Mael Balland</option>
+        <option value="4">Natalya Letunova</option>
+      </select>
+
+      <textarea placeholder="Your request..."></textarea>
+
+  <section>
+
+    <input type="submit" value="Send" class="buttonSend"/>
+
+  </section>
+  </form>
   <!-- CONTACT END  -->
+
+
+  <!--FOOTER-->
+  <footer>
+    <div class="leftFooter">
+      <a href="landscapes.html" title="See the landscapes project">Landscapes</a>
+      <a href="people.html" title="See the people project">People</a>
+      <a href="objects.html" title="See the objects project">Objects</a>
+      <a href="architecture.html" title="See the architecture project">Architecture</a>
+    </div>
+
+    <div class="rightFooter">
+      <a href="faq.html" title="If you want to contact us">Contact Us</a>
+      <a href="legal_mentions.html" title="Our conditions and legal notice">Legal mentions</a>
+    </div>
+</footer>
+
+  <!--FOOTER END-->
+
   <script src="js/index.js"></script>
+
 </body>
-
-
 </html>
