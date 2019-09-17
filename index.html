@@ -44,16 +44,19 @@
       <input type="text" id="lname" name="lastname" placeholder="Your last name...">
 
       <label class="contact">E-mail</label>
-      <input type="email" id="email" name="email" placeholder="Your e-mail...">
+      <input type="text" 
+      id="email"
+      name="email" 
+      placeholder="Your e-mail..." 
+      pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+      title="Your email adress is invalid">
 
       <select id="select">
-        <option value="">--Please choose an option--</option>
-        <option value="1">Artist 1</option>
-        <option value="2">Artist 2</option>
-        <option value="3">Artist 3</option>
-        <option value="4">Artist 4</option>
-        <option value="5">Artist 5</option>
-        <option value="6">Artist 6</option>
+        <option value="">--Choose the photograph you want to learn with--</option>
+        <option value="1">Christian Rosswag</option>
+        <option value="2">Joseph Barrientos</option>
+        <option value="3">Mael Balland</option>
+        <option value="4">Natalya Letunova</option>
       </select>
 
       <textarea placeholder="Your request..."></textarea>

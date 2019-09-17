@@ -38,30 +38,33 @@ form {
 }
 input[type=text], input[type=email], select, textarea { 
 	font-weight: bold;
-	font-size: 18px;
+  font-size: 0.75rem;
   width: 70%; 
   padding: 12px;   
-  border: 5px solid #ccc; 
+  border: 3px; 
   border-radius: 4px; 
 	margin-top: 6px;
   margin-bottom: 16px; 
   resize: vertical;
+  white-space: normal;
 }
 
 .contact {
 	color: white;
-  font-size: 20px;
+  font-size: 0.75rem;
 }
 
 .buttonSend {
 	background: #0F2027;
 	border: none;
 	color: white;
-	font-size: 22px;
+	font-size: 0.75rem;
 	height: 30px;
-	padding: 0px 15px;
+	padding: initial;
   width: 70px;
   text-align: center;
+  margin-bottom: 30px;
+  cursor: pointer;
 }
 
 
@@ -76,11 +79,26 @@ footer a {
   display: flex;
   background-color:#0F2027;
   color: white;
-  padding: 10px 0;
+  padding: 7px 0;
   flex-direction: column;
   text-decoration: none;
+  font-size: 0.75rem;
 }
 
 .rightFooter {
   font-weight: bold;
+}
+
+@media screen and (max-width: 768px) {
+
+  footer {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  footer a {
+    text-align: center;
+  }
+
 }
