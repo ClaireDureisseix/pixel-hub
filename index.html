@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel = "stylesheet" href = "style.css" />
+  <link rel="stylesheet" href="css/style.css" />
   <title>Pixel Hub</title>
 </head>
 
@@ -12,12 +12,26 @@
 
 <body>
   <header>
-    <!-- NAVBAR -->
+    <!-- NAVBAR desktop -->
 
+    <!-- NAVBAR mobile -->
+    <div id="contact" class="overlay">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeContact()"> <img src="img/icone/gdreturn.png"
+          alt="close"></a>
+      <div class="overlay-content">
+        <div>
+          <p>link 1</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="contactBtn">
+      <span id="contactBtnJs" onclick="openContact()"> Nous contacter</span>
+    </div>
     <!-- NAVBAR END -->
-  
+
   </header>
-  
+
   <!--CAROUSEL-->
 
   <!-- CAROUSEL END -->
@@ -36,6 +50,7 @@
   <!-- CONTACT -->
 
   <!-- CONTACT END  -->
+  <script src="js/index.js"></script>
 </body>
 
 </html>
