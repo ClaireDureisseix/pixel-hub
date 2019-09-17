@@ -16,6 +16,23 @@
 
 body {
   line-height: 1.5;
+  font-family: "Roboto";
+}
+
+
+.bg-main{
+  background: #2c5364;
+}
+
+.bg-main > h2,
+.bg-secondary > h2{
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+.bg-secondary{
+  background: #0F2027;
 }
 
 /* NAVBAR */
@@ -115,6 +132,98 @@ body {
 
 
 /* PARTNERS */
+
+.card-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  background: #2c5364;
+  height: max-content;
+  align-content: center;
+  align-items: center;
+  padding-bottom: 50px;
+  flex-wrap: wrap;
+}
+
+.card {
+  border-radius: 5px;
+  transition: 0.3s;
+  background: white;
+  height: max-content;
+  width: max-content;
+  max-width: 365px;
+  text-align: center;
+  margin: 20px;
+}
+
+.card > img{
+  position: relative;
+}
+
+.img-description{
+  position: relative;
+  font-size: 12px;
+  padding: 10px;
+  text-align: justify;
+}
+
+.card-item {
+  text-align: left;
+  padding: 25px;
+}
+
+.card-item > p {
+  font-size: 14px;
+  word-wrap: break-word;
+}
+
+@media screen and (min-width: 768px) {
+  
+  .card-container{
+    flex-direction: row;
+  }
+
+  .card:hover {
+    box-shadow: 3px 3px 20px 0 #000000;
+    transform: translate(-10px, -10px);
+  }
+
+  .card .img-description{
+    font-size: 14px;
+    word-break: break-all;
+    text-align: left;
+    padding: 50px 10px;
+  }
+
+  .card > img{
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+  }
+  
+  .img-description {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    color: #fff;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity .2s, visibility .2s;
+  }
+  
+  .card:hover > img{
+    opacity: 0.1;
+    transition: 0.5s ease-in;
+  }
+  
+  .card:hover .img-description{
+    color: black;
+    visibility: visible;
+    opacity: 1;
+  }
+
+}
 
 
 /* CONTACT */
