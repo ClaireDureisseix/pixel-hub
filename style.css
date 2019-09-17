@@ -1,7 +1,9 @@
 /* RESET CSS */
 @import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
 
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -11,13 +13,120 @@
 :root {
   font-size: calc(1vw + 0.5em);
 }
+
 body {
   line-height: 1.5;
   font-family: 'Roboto', sans-serif;
+
+}
+
+
+.bg-main{
+  background: #2c5364;
+}
+
+.bg-main > h2,
+.bg-secondary > h2{
+  color: white;
+  padding: 20px;
+  text-align: center;
+  font-size: 35px;
+}
+
+.bg-secondary{
+  background: #0F2027;
+
 }
 
 /* NAVBAR */
+.contactBtn {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: calc(14px + 0.7vw);
+  padding: 8px 10px 5px 10px;
+  display: flex;
+  right: 8px;
+  position: fixed;
+  z-index: 200;
+  cursor: pointer;
+  transition: 0.2s linear all;
+  background-color: #bc9f55;
+  background-color: rgba(187, 158, 84, 0.8);
+  color: white;
+}
 
+.contactBtn:hover {
+  background-color: #0d2951;
+  background-color: rgba(13, 41, 82, 0.8);
+}
+
+.contactOn {
+  transition: 0.2s linear all;
+  bottom: 8px;
+}
+
+.contactOn:hover {
+  background-color: #0d2951;
+  transition: 0.2s linear all;
+  bottom: 8px;
+  color: white;
+}
+
+.overlay {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1000;
+  top: 10%;
+  left: 8px;
+  background-color: #0d2951;
+  background-color: rgba(13, 41, 82, 0.8);
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+
+.overlay-content {
+  position: relative;
+  top: 10%;
+  width: 100%;
+  text-align: left;
+  margin-top: 10px;
+}
+
+.overlay a {
+  padding: 10px;
+  text-decoration: none;
+  font-size: calc(12px + 0.4vw);
+  color: #ffffff;
+  display: block;
+  transition: 0.5s;
+}
+
+.overlay a:hover,
+.overlay a:focus {
+  color: #f1f1f1;
+}
+
+.overlay .closebtn {
+  position: absolute;
+  top: 0;
+  right: 5px;
+  font-size: 50px;
+}
+
+.overlay .closebtn:hover {
+  transition: 0.2s linear all;
+  transform: rotate(360deg);
+}
+
+.overlay a:hover {
+  color: #bc9f55;
+}
+
+@media screen and (min-width: 350px) {
+  .overlay {
+    max-width: 450px;
+  }
+}
 
 /* CAROUSEL */
 
@@ -26,6 +135,103 @@ body {
 
 
 /* PARTNERS */
+
+.card-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  background: #2c5364;
+  height: max-content;
+  align-content: center;
+  align-items: center;
+  padding-bottom: 50px;
+  flex-wrap: wrap;
+}
+
+.card {
+  border-radius: 5px;
+  transition: 0.3s;
+  background: white;
+  height: max-content;
+  width: max-content;
+  max-width: 365px;
+  text-align: center;
+  margin: 20px;
+}
+
+.card > img{
+  position: relative;
+}
+
+.img-description{
+  position: relative;
+  font-size: 12px;
+  padding: 10px 25px;
+  text-align: justify;
+  white-space: normal;
+}
+
+.card-item {
+  text-align: left;
+  padding: 25px;
+}
+
+.card-item > p {
+  font-size: 14px;
+  word-wrap: break-word;
+}
+
+.card-item > h4{
+  font-size: 18px;
+}
+
+@media screen and (min-width: 768px) {
+  
+  .card-container{
+    flex-direction: row;
+  }
+
+  .card:hover {
+    box-shadow: 3px 3px 20px 0 #000000;
+    transform: translate(-10px, -10px);
+  }
+
+  .card .img-description{
+    font-size: 14px;
+    word-break: break-all;
+    text-align: left;
+    padding: 50px 10px;
+  }
+
+  .card > img{
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+  }
+  
+  .img-description {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    color: #fff;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity .2s, visibility .2s;
+  }
+  
+  .card:hover > img{
+    opacity: 0.1;
+    transition: 0.5s ease-in;
+  }
+  
+  .card:hover .img-description{
+    color: black;
+    visibility: visible;
+    opacity: 1;
+  }
+
+}
 
 
 /* CONTACT */
