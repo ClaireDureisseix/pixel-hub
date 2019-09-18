@@ -1,6 +1,6 @@
 // CONTACT
 function openContact() {
-  document.getElementById("menu").style.height = "100%";
+  document.getElementById("menu").style.height = "50%";
 }
 
 function closeContact() {
