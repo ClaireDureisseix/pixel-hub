@@ -7,7 +7,6 @@
   <script src="https://kit.fontawesome.com/93f0a7d061.js"></script>
   <link rel="stylesheet" href="style.css" />
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto&display=swap" />
-
   <title>Pixel Hub</title>
 </head>
 
@@ -20,11 +19,11 @@
       <div class='menu'>
         <div class='brand'>Pixel HUB</div>
         <div class='links'>
-          <div class='signup'><a href="">Lanscape</a></div>
-          <div class='login'><a href="">Architecture</a></div>
-          <div class='login'><a href="">objects</a></div>
-          <div class='login'><a href="">Alone</a></div>
-          <div class='login'><a href="">Contact</a></div>
+          <div class='menu-right'><a href="landscapes.html">Lanscape</a></div>
+          <div class='menu-right'><a href="people.html">Alone</a></div>
+          <div class='menu-right'><a href="objects.html">objects</a></div>
+          <div class='menu-right'><a href="architecture.html">Architecture</a></div>
+          <div class='menu-right'><a href="contact.html">Contact</a></div>
         </div>
       </div>
     </div>
@@ -36,11 +35,11 @@
       <div class="overlay-content">
         <div>
           <ul>
-            <li><a href="">Lanscape</a></li>
-            <li><a href="">Architecture</a></li>
-            <li><a href="">objects</a></li>
-            <li><a href="">Alone</a></li>
-            <li class="phone"><a href="">Contact</a>
+            <li><a href="landscapes.html">Lanscape</a></li>
+            <li><a href="people.html">Alone</a></li>
+            <li><a href="objects.html">objects</a></li>
+            <li><a href="architecture.html">Architecture</a></li>
+            <li class="phone"><a href="contact.html">Contact</a>
             </li>
           </ul>
         </div>
@@ -171,6 +170,10 @@
 
 
   <!-- CONTACT -->
+
+  <section class="bg-main">
+    <h2><i class="fas fa-envelope-square"></i> CONTACT US</h2>
+
   <form>
 
     <label class="contact">First Name</label>
@@ -183,21 +186,19 @@
     <input type="text" id="email" name="email" placeholder="Your e-mail..."
       pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" title="Your email adress is invalid">
 
-    <select id="select">
-      <option value="">--Choose the photograph you want to learn with--</option>
-      <option value="1">Christian Rosswag</option>
-      <option value="2">Joseph Barrientos</option>
-      <option value="3">Mael Balland</option>
-      <option value="4">Natalya Letunova</option>
-    </select>
+      <select id="select">
+        <option value="">--Choose the photograph you want to learn with--</option>
+        <option value="1">Natalya Letunova</option>
+        <option value="2">Mael Balland</option>
+        <option value="3">Patrick Hendry</option>
+        <option value="4">Pablo Garcia</option>
+      </select>
 
-    <textarea placeholder="Your request..."></textarea>
-
-    <section>
-
-      <input type="submit" value="Send" class="buttonSend" />
-
-    </section>
+      <textarea placeholder="Your request..."></textarea>
+    
+    <input type="submit" value="Send" class="buttonSend"/>
+    
+  </section>
   </form>
   <!-- CONTACT END  -->
 
@@ -205,7 +206,7 @@
   <footer>
     <div class="leftFooter">
       <a href="landscapes.html" title="See the landscapes project">Landscapes</a>
-      <a href="people.html" title="See the people project">People</a>
+      <a href="people.html" title="See the alone project">Alone</a>
       <a href="objects.html" title="See the objects project">Objects</a>
       <a href="architecture.html" title="See the architecture project">Architecture</a>
     </div>
