@@ -10,7 +10,7 @@ function closeContact() {
 
 // ci-dessous carousel
 
-// automatic carousel
+// automatic carousel + dots
 let slideIndex = 0;
 showSlides();
 
