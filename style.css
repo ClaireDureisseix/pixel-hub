@@ -117,18 +117,23 @@ body {
   width: 100%;
   position: fixed;
   z-index: 1000;
-  top: 30%;
   background-color: #2c5364;
   overflow-x: hidden;
+  overflow-y: hidden;
   transition: 0.5s;
+  display: flex;
+  flex-direction: column-reverse;
+  bottom: 0;
 }
 
 .overlay-content {
-  position: relative;
-  top: 10%;
+  display: flex;
+  bottom: 0;
+  align-content: flex-end;
+  flex-direction: column-reverse;
   width: 100%;
-  text-align: left;
-  margin-top: 10px;
+  text-align: right;
+  margin-top: 50px;
 }
 
 .overlay a {
@@ -160,11 +165,6 @@ body {
 
 .overlay ul li a {
   font-size: 1.4rem;
-}
-
-.phone {
-  display: flex;
-  flex-direction: row-reverse;
 }
 
 
