@@ -24,17 +24,31 @@ body {
   background: #2c5364;
 }
 
-.bg-main > h2,
-.bg-secondary > h2{
-  color: white;
-  padding: 20px;
-  text-align: center;
-  font-size: 35px;
-}
-
 .bg-secondary{
   background: #0F2027;
 }
+
+.bg-main > h2,
+.bg-secondary > h2{
+  color: white;
+  padding: 10px;
+  text-align: left;
+  font-size: 35px;
+  background: #000000;
+  box-shadow: 0px 4px 5px -5px black;
+  border-bottom-right-radius: 5px;
+}
+
+@media screen and (min-width: 768px) {
+  .bg-main > h2,
+  .bg-secondary > h2{
+    width: 25%;
+    min-width: max-content;
+    box-shadow: 0 4px 12px -2px black;
+  }
+}
+
+
 
 /* NAVBAR */
 .contactBtn {
@@ -133,6 +147,13 @@ body {
 
 .about-container{
   height: max-content;
+  padding: 70px;
+}
+
+.about-container > p{
+  font-size: 16px;
+  color: white;
+  text-align: justify;
 }
 
 /* PARTNERS */
@@ -144,7 +165,7 @@ body {
   height: max-content;
   align-content: center;
   align-items: center;
-  padding-bottom: 50px;
+  padding: 50px;
   flex-wrap: wrap;
 }
 
