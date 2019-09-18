@@ -38,17 +38,10 @@ body {
   color: white;
   padding: 10px;
   text-align: center;
-  font-size: 2.2rem;
+  font-size: 1.2rem;
   border-bottom: solid 1px white;
 }
 
-.bg-secondary {
-  background: #203A43;
-}
-
-.bg-heads {
-  background: #0F2027;
-}
 
 @media screen and (min-width: 766px) {
   .bg-main>h2,
@@ -56,6 +49,7 @@ body {
     width: 25%;
     min-width: 33%;
     text-align: left;
+    white-space: nowrap;
     border-bottom-right-radius: 30px;
   }
 }
