@@ -83,6 +83,11 @@ body {
   width: 60px;
 }
 
+a {
+  cursor: pointer;
+}
+
+/* NAVBAR */
 .contactBtn {
   padding: 8px 10px 5px 10px;
   display: flex;
@@ -176,7 +181,26 @@ body {
 }
 
 /* CAROUSEL */
+.slides-container {
+  position: relative;
+}
 
+.slides-img {
+  width: 100%;
+}
+
+.left-arrow,
+.right-arrow {
+  position: absolute;
+  bottom: 50%;
+  /* à améliorer, selon que basé sur bottom ou top, plus en haut ou en bas malgré 50%*/
+  padding: 0 0.5em;
+  font-size: 3em;
+}
+
+.right-arrow {
+  right: 0;
+}
 
 /* CONCEPT */
 
@@ -366,5 +390,9 @@ footer a:hover {
 
   footer a {
     text-align: center;
+
   }
 }
+
+
+/* CONTACT */
