@@ -32,19 +32,18 @@ body {
 .bg-secondary > h2{
   color: white;
   padding: 10px;
-  text-align: left;
+  text-align: center;
   font-size: 35px;
-  background: #000000;
-  box-shadow: 0px 4px 5px -5px black;
-  border-bottom-right-radius: 5px;
+  border-bottom: solid 1px white;
 }
 
 @media screen and (min-width: 768px) {
   .bg-main > h2,
   .bg-secondary > h2{
+    text-align: left;
     width: 25%;
-    min-width: max-content;
-    box-shadow: 0 4px 12px -2px black;
+    min-width: 33%;
+    border-bottom-right-radius: 25px;
   }
 }
 
