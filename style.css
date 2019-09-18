@@ -26,6 +26,10 @@ body {
 }
 
 .bg-secondary{
+  background: #203A43;
+}
+
+.bg-heads{
   background: #0F2027;
 }
 
