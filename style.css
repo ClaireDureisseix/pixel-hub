@@ -204,7 +204,7 @@ a{
 .dots-container{
   position:absolute;
   bottom:1.5em;
-  left:calc(50% - 60px);
+  left:calc(50% - 80px);
 }
 
 .dots{
@@ -214,7 +214,10 @@ a{
   border-radius:50%;
   display:inline-block;
   margin:0 0.5em;
+}
 
+.active{
+  background-color:red;
 }
 
 /* CONCEPT */
