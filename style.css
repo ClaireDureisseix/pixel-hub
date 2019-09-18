@@ -11,7 +11,7 @@
 }
 
 :root {
-  font-size: calc(vw + 0.7em);
+  font-size: calc(1vw + 0.7em);
 }
 
 body {
@@ -199,6 +199,22 @@ a{
 
 .right-arrow{
   right:0;
+}
+
+.dots-container{
+  position:absolute;
+  bottom:1.5em;
+  left:calc(50% - 60px);
+}
+
+.dots{
+  height: 20px;
+  width: 20px;
+  background-color:black;
+  border-radius:50%;
+  display:inline-block;
+  margin:0 0.5em;
+
 }
 
 /* CONCEPT */
