@@ -25,18 +25,32 @@ body {
   background: #2c5364;
 }
 
+.bg-secondary{
+  background: #0F2027;
+}
+
 .bg-main > h2,
 .bg-secondary > h2{
   color: white;
-  padding: 20px;
+  padding: 10px;
   text-align: center;
   font-size: 35px;
+  border-bottom: solid 1px white;
 }
 
-.bg-secondary{
-  background: #0F2027;
-
+@media screen and (min-width: 768px) {
+  .bg-main > h2,
+  .bg-secondary > h2{
+    text-align: left;
+    width: 25%;
+    min-width: 33%;
+    border-bottom-right-radius: 25px;
+  }
 }
+
+
+
+/* NAVBAR */
 
 /* NAVBAR DESKTOP */
 
@@ -203,6 +217,16 @@ a{
 
 /* CONCEPT */
 
+.about-container{
+  height: max-content;
+  padding: 70px;
+}
+
+.about-container > p{
+  font-size: 16px;
+  color: white;
+  text-align: justify;
+}
 
 /* PARTNERS */
 
@@ -210,11 +234,10 @@ a{
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-  background: #2c5364;
   height: max-content;
   align-content: center;
   align-items: center;
-  padding-bottom: 50px;
+  padding: 50px;
   flex-wrap: wrap;
 }
 
@@ -390,4 +413,5 @@ footer a:hover {
 
 
 
-/* CONTACT */
+/* CONTACT  */
+
