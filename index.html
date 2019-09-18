@@ -4,7 +4,6 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-
   <link rel = "stylesheet" href = "style.css" />
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto&display=swap" />
   <title>Pixel Hub</title>
@@ -15,20 +14,39 @@
 <body>
   <header>
     <!-- NAVBAR desktop -->
+    <div class='menu-container'>
+      <div class='menu'>
+        <div class='brand'>Pixel HUB</div>
+        <div class='links'>
+          <div class='signup'><a href="">Lanscape</a></div>
+          <div class='login'><a href="">Architecture</a></div>
+          <div class='login'><a href="">objects</a></div>
+          <div class='login'><a href="">Alone</a></div>
+          <div class='login'><a href="">Contact</a></div>
+        </div>
+      </div>
+    </div>
 
     <!-- NAVBAR mobile -->
-    <div id="contact" class="overlay">
+    <div id="menu" class="overlay">
       <a href="javascript:void(0)" class="closebtn" onclick="closeContact()"> <img src="img/icone/gdreturn.png"
           alt="close"></a>
       <div class="overlay-content">
         <div>
-          <p>link 1</p>
+          <ul>
+            <li><a href="">Lanscape</a></li>
+            <li><a href="">Architecture</a></li>
+            <li><a href="">objects</a></li>
+            <li><a href="">Alone</a></li>
+            <li class="phone"><a href="">Contact</a>
+            </li>
+          </ul>
         </div>
       </div>
     </div>
 
     <div class="contactBtn">
-      <span id="contactBtnJs" onclick="openContact()"> Nous contacter</span>
+      <span id="contactBtnJs" onclick="openContact()"><img src="img/icone/menu.png" alt=""></span>
     </div>
     <!-- NAVBAR END -->
 
