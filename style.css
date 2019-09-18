@@ -122,14 +122,18 @@ body {
 
 
 /* GALLERY */
+.gallery-container {
+  background: #2c5364;
+}
 
 .bloc-photograph img {
   width: 100%;
 }
 .bloc-photograph {
   background: #2c5364;
+  margin: 10px auto;
   display: grid;
-  grid-template-columns: 45% 1fr;
+  grid-template-columns: 47.3% 1fr;
   grid-template-rows: 100% 1fr 1fr auto;
   grid-gap: 10px;
 }
@@ -137,8 +141,12 @@ body {
   padding: 20px 20px;
   grid-column-end: span 2;
   color: #FFF;
+  background: #0F2027;
 }
-.photo-item-portrait {
+.photo-item {
+  align-self: center;
+}
+.portrait {
   grid-column-start: 1;
   grid-row-start: span 2;
   align-self: center;
@@ -146,13 +154,13 @@ body {
 .desktop-img {
   display: none;
 }
-.photo-item2 {
+.item2 {
   grid-column-start: 2; 
   grid-row-start: 3;
   flex: wrap;
 }
 
-.gal-info {
+.gallery-info {
   grid-row-start: 4;
   grid-column-start: span 2;
   padding: 15px 15px;
@@ -160,6 +168,28 @@ body {
   color: #FFF;
   font-weight: lighter;
   font-size: 0.8rem;
+  background: #0F2027;
+  display: flex;
+  justify-content: space-between;
+}
+.button-book {
+  align-self: center;
+  max-width: 50px;
+
+}
+.book {
+  font-size: .8rem;
+  padding: 10px;
+  color: #FFF;
+  background: #0F2027;
+  border: 2px solid #FFF;  
+  border-radius: 5px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: border .3s;
+}
+.book:hover {
+  border: 2px solid #2c5364;
 }
 @media screen and (min-width: 768px) {
   .desktop-img {
