@@ -37,7 +37,6 @@ function showSlides(){
 
 
 
-
 /*automatic carousel ok
 
 let slideIndex = 0;
