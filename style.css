@@ -215,12 +215,14 @@ a {
 
 .slides-img {
   width: 100%;
+  object-fit: cover;
+  height: 100vh;
 }
 
 .left-arrow,
 .right-arrow{
   position:absolute;
-  bottom:50%; /* à améliorer, selon que basé sur bottom ou top, plus en haut ou en bas malgré 50%*/
+  bottom: 50%; /* à améliorer, selon que basé sur bottom ou top, plus en haut ou en bas malgré 50%*/
   margin:0 0.3em;
   font-size:3em;
   color:#f64f59;
