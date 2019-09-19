@@ -4,12 +4,57 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Objects</title>
   <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/93f0a7d061.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500i,700&display=swap" rel="stylesheet">
+  <title>Objects</title>
 </head>
 <body>
+  <header>
+    <!-- NAVBAR desktop -->
+    <div class='menu-container'>
+      <div class='menu'>
+        <div class='brand'>Pixel HUB</div>
+        <div class='links'>
+          <div class='signup'><a href="">Lanscape</a></div>
+          <div class='login'><a href="">Architecture</a></div>
+          <div class='login'><a href="">objects</a></div>
+          <div class='login'><a href="">Alone</a></div>
+          <div class='login'><a href="">Contact</a></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- NAVBAR mobile -->
+    <div id="menu" class="overlay">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeContact()"> <img src="img/icone/gdreturn.png"
+          alt="close"></a>
+      <div class="overlay-content">
+        <div>
+          <ul>
+            <li><a href="">Lanscape</a></li>
+            <li><a href="">Architecture</a></li>
+            <li><a href="">Objects</a></li>
+            <li><a href="">Alone</a></li>
+            <li class="phone"><a href="">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="contactBtn">
+      <span id="contactBtnJs" onclick="openContact()"><img src="img/icone/menu.png" alt=""></span>
+    </div>
+    <!-- NAVBAR END -->
+  </header>
+
+  <!-- GALLERY -->
   <section class="bg-main one">
-    <h3 class="bg-main name">Christian Rosswag</h3>
+    <div class="main-title">
+      <h3 class="name">Christian Rosswag</h3>
+      <p class="cat">/object</p>
+    </div>
     <div class="portfolio">
       <div class="portfolio-item photo1">
         <img src="img/object/bus-lautaro-andreani.jpg" alt="close up in an old bus">
@@ -30,7 +75,7 @@
           <img src="img/object/kev-seto-Jv0TBnjzYNM-unsplash.jpg" alt="exit sign on the ground">
         </div>
     </div>
-    <div class="bg-main infos">
+    <div class="infos">
       <div class="link">
         <a class="book" href="https://unsplash.com/s/users/christian-rosswag" target="_blank">Book a course</a>
       </div>
@@ -44,13 +89,17 @@
     </div>
   </section>
   <section class="bg-secondary two">
-    <h3 class="bg-secondary name">Hoshino</h3>
+    <div class="main-title">
+      <h3 class="name">Hoshino</h3>
+      <p class="cat">/object</p>
+    </div>
     <div class="portfolio">
       <div class="portfolio-item photo1">
-        <img src="img/objects/shane rounce.jpeg" alt="tire in a street">      </div>
-      <div class="portfolio-item photo2">
         <img src="img/objects/hoshino.jpeg" alt="abandoned hospital room">
-        </div>
+      </div>
+      <div class="portfolio-item photo2">
+        <img src="img/objects/shane rounce.jpeg" alt="tire in a street">      
+      </div>
       <div class="portfolio-item photo3">
         <img  src="img/objects/taton_moise.jpeg" alt="rusted bus drowned into vegetation">
       </div>
@@ -64,7 +113,7 @@
         <img src="img/objects/romain_lohezic.jpeg" alt="exit sign on the ground">
       </div>
     </div>
-    <div class="bg-secondary infos">
+    <div class="infos">
       <div class="link">
         <a class="book" href="#">Book a course</a>
       </div>
@@ -76,6 +125,9 @@
         <p class="where">Venice, Italie</p>
       </div>
     </div>
-    </section>
+  </section>
+  <!-- GALLERY END -->
+
+  <script src="js/index.js"></script>
 </body>
 </html>
