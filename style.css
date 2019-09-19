@@ -98,6 +98,13 @@ body {
 .menu-right {
   margin-left: 20px;
 }
+.brand {
+  font-family: 'Turret Road', cursive;
+  font-size: 1rem;
+  font-weight: 800;
+  padding-left: 20px;
+  opacity: .5;
+}
 
 @media screen and (max-width: 766px) {
   .menu-container .links {
@@ -495,6 +502,9 @@ footer a:hover {
 /* =====GALLERY===== */
 /* Photographe 1 */
 
+.one {
+  padding-top: 70px;
+}
 .portfolio {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
@@ -526,17 +536,19 @@ footer a:hover {
   color: #a7a7a7;
   padding-left: 10px;
   padding-top: 5px;
+  font-weight: 300;
+  font-style: italic;
 }
 
-.photo1 {
+.child1 {
   grid-column: span 3;
   grid-row: span 6;
 }
-.photo2 {
+.child2 {
   grid-column: span 3;
   grid-row: span 3;
 }
-.photo3 {
+.child3 {
   grid-column: span 3;
   grid-row: span 3; 
 }
@@ -551,8 +563,14 @@ footer a:hover {
   color: #FFF;
   font-weight: lighter;
   font-size: 0.6rem;
-  font-style: italic;
   text-align: right;
+}
+.price, .where {
+  font-style: italic;
+}
+.price {
+  color: #C89446;
+  font-weight: 300;
 }
 .book {
   font-size: .6rem;
@@ -565,23 +583,23 @@ footer a:hover {
 .link a:hover {
   color: rgb(216, 214, 213); 
 }
-.photo4, .photo5, .photo6 {
+.desktop-img {
   display: none;
 }
 
 /* Photographe 2 */
 .two .main-title {
-  justify-content: flex-end ;
+  justify-content: flex-end;
 }
-.two .photo1 {
+.two .child1 {
   grid-column: span 3;
   grid-row: span 3;
 }
-.two .photo2 {
+.two .child2 {
   grid-column: span 3;
   grid-row: span 6;
 }
-.two .photo3 {
+.two .child3 {
   grid-column: span 3;
   grid-row: span 3;
 }
