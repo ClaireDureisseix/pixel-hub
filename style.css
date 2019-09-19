@@ -474,12 +474,13 @@ footer a:hover {
 .book {
   font-size: .6rem;
   padding: 10px;
-  color: #FFF;
+  text-decoration: none;
+  color: #C89446;
   text-transform: uppercase;
   transition: .3s;
 }
 .link a:hover {
-  color: #2c5364; 
+  color: rgb(216, 214, 213); 
 }
 .photo4, .photo5, .photo6 {
   display: none;
