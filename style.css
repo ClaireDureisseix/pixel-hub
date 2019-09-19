@@ -11,7 +11,7 @@
 }
 
 :root {
-  font-size: calc(vw + 0.7em);
+  font-size: calc(1vw + 0.7em);
 }
 
 body {
@@ -38,17 +38,10 @@ body {
   color: white;
   padding: 10px;
   text-align: center;
-  font-size: 2.2rem;
+  font-size: 1.2rem;
   border-bottom: solid 1px white;
 }
 
-.bg-secondary {
-  background: #203A43;
-}
-
-.bg-heads {
-  background: #0F2027;
-}
 
 @media screen and (min-width: 766px) {
   .bg-main>h2,
@@ -56,6 +49,7 @@ body {
     width: 25%;
     min-width: 33%;
     text-align: left;
+    white-space: nowrap;
     border-bottom-right-radius: 30px;
   }
 }
@@ -93,11 +87,15 @@ body {
 .links a {
   color: white;
   text-decoration: none;
+
 }
 
 .links a:hover {
   color: rgba(255, 255, 255, 0.568);
 }
+
+}
+
 
 .menu-right {
   margin-left: 20px;
@@ -212,8 +210,10 @@ a {
 }
 
 /* CAROUSEL */
-.slides-container {
-  position: relative;
+
+/* slides start */
+.slides-container{
+  position:relative;
 }
 
 .slides-img {
@@ -221,7 +221,15 @@ a {
 }
 
 .left-arrow,
-.right-arrow {
+.right-arrow{
+  position:absolute;
+  bottom:50%; /* à améliorer, selon que basé sur bottom ou top, plus en haut ou en bas malgré 50%*/
+  margin:0 0.3em;
+  font-size:3em;
+  color:#f64f59;
+}
+
+.right-arrow{
   position: absolute;
   bottom: 50%;
   /* à améliorer, selon que basé sur bottom ou top, plus en haut ou en bas malgré 50%*/
@@ -232,6 +240,31 @@ a {
 .right-arrow {
   right: 0;
 }
+/* slides end */
+
+/* dots start */
+.dots-container{
+  position:absolute;
+  bottom:1.5em;
+  left:calc(50% - 80px);
+}
+
+.dots{
+  height: 20px;
+  width: 20px;
+  background-color: rgba(255, 255, 255, 0.75);
+  border-radius:50%;
+  display:inline-block;
+  margin:0 0.5em;
+  cursor:pointer;
+}
+
+.active{
+  background-color:#f64f59;
+}
+
+/* dots end */
+
 
 /* CONCEPT */
 
