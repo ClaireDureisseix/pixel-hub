@@ -540,15 +540,15 @@ footer a:hover {
   font-style: italic;
 }
 
-.child1 {
+.portfolio .portfolio-item:first-child {
   grid-column: span 3;
   grid-row: span 6;
 }
-.child2 {
+.portfolio .portfolio-item:nth-child(2) {
   grid-column: span 3;
   grid-row: span 3;
 }
-.child3 {
+.portfolio .portfolio-item:nth-child(3) {
   grid-column: span 3;
   grid-row: span 3; 
 }
@@ -591,15 +591,15 @@ footer a:hover {
 .two .main-title {
   justify-content: flex-end;
 }
-.two .child1 {
+.two .portfolio .portfolio-item:first-child {
   grid-column: span 3;
   grid-row: span 3;
 }
-.two .child2 {
+.two .portfolio .portfolio-item:nth-child(2) {
   grid-column: span 3;
   grid-row: span 6;
 }
-.two .child3 {
+.two .portfolio .portfolio-item:nth-child(3) {
   grid-column: span 3;
   grid-row: span 3;
 }
