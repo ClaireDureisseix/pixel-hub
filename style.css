@@ -229,12 +229,18 @@ a {
 /* slides start */
 .slides-container{
   position:relative;
+  padding-top: 4.9rem;
 }
 
 .slides-img {
   width: 100%;
   object-fit: cover;
-  height: 100vh;
+}
+
+@media screen and (min-width: 766px) {
+  .slides-img{
+    height: 100vh;
+  }
 }
 
 .left-arrow,
