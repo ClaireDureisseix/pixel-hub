@@ -87,11 +87,15 @@ body {
 .links a {
   color: white;
   text-decoration: none;
+
 }
 
 .links a:hover {
   color: rgba(255, 255, 255, 0.568);
 }
+
+}
+
 
 .menu-right {
   margin-left: 20px;
@@ -403,7 +407,7 @@ textarea {
   font-size: 0.75rem;
 }
 
-.buttonSend {
+.btn {
   background: #0F2027;
   border: none;
   color: white;
@@ -416,7 +420,7 @@ textarea {
   cursor: pointer;
 }
 
-.buttonSend:hover {
+.btn:hover {
   color: rgb(216, 214, 213);
 }
 
