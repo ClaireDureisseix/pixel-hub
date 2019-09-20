@@ -539,15 +539,15 @@ footer a:hover {
   font-style: italic;
 }
 
-.child1 {
+.one .child1 {
   grid-column: span 3;
   grid-row: span 6;
 }
-.child2 {
+.one .child2 {
   grid-column: span 3;
   grid-row: span 3;
 }
-.child3 {
+.one .child3 {
   grid-column: span 3;
   grid-row: span 3; 
 }
@@ -609,7 +609,100 @@ footer a:hover {
   text-align: left;
 }
 
+@keyframes opacity-items {
+  from { 
+    opacity: 1; 
+  }
+  5%  { 
+    opacity: 0; 
+  } 
+  to   { 
+    opacity: 1; 
+  }
+}
+
 @media screen and (min-width: 768px) {
+  body, html {
+    margin: 0;
+    padding: 0;
+  }
+  
+  .desktop-img {
+    display: block;
+  }
+
+  .portfolio-item {
+    background-color: white;
+    overflow: hidden;
+  }
+
+  .portfolio img {
+    display:  ;
+  }
+
+  .container-grid {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .one .portfolio {
+    width: 75%;
+    height: 100%;
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .one .portfolio-item.small-square {
+    grid-row: span 1;
+    grid-column: span 1;
+  }
+  
+  .one .portfolio-item.large-square {
+    grid-row: span 2;
+    grid-column: span 2;
+  }
+  
+  .one .portfolio-item.tall {
+    grid-row: span 2;
+    grid-column: span 1;
+  }
+  
+  .one .portfolio-item.wide {
+    grid-row: span 3;
+    grid-column: span 3;
+  }
+
+  .two .portfolio {
+    width: 75%;
+    height: 100%;
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .two .portfolio-item.small-square {
+    grid-row: span 1;
+    grid-column: span 1;
+  }
+  
+  .two .portfolio-item.large-square {
+    grid-row: span 2;
+    grid-column: span 2;
+  }
+  
+  .two .portfolio-item.tall {
+    grid-row: span 2;
+    grid-column: span 1;
+  }
+  
+  .two .portfolio-item.wide {
+    grid-row: span 2;
+    grid-column: span 2;
+  }
+}
+
+@media screen and (min-width: 992px) {
   body, html {
     margin: 0;
     padding: 0;
@@ -639,26 +732,51 @@ footer a:hover {
   .one .portfolio {
     width: 75%;
     height: 100%;
-    grid-template-rows: repeat(4, 1fr);
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
   }
-  .portfolio-item.small-square {
+  .one .portfolio-item.small-square {
     grid-row: span 1;
     grid-column: span 1;
   }
   
-  .portfolio-item.large-square {
+  .one .portfolio-item.large-square {
     grid-row: span 2;
     grid-column: span 2;
   }
   
-  .portfolio-item.tall {
+  .one .portfolio-item.tall {
     grid-row: span 2;
     grid-column: span 1;
   }
   
-  .portfolio-item.wide {
-    grid-row: span 3;
+  .one .portfolio-item.wide {
+    grid-row: span 1;
+    grid-column: span 3;
+  }
+  .two .portfolio {
+    width: 75%;
+    height: 100%;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .two .portfolio-item.small-square {
+    grid-row: span 1;
+    grid-column: span 1;
+  }
+  
+  .two .portfolio-item.large-square {
+    grid-row: span 2;
+    grid-column: span 2;
+  }
+  
+  .two .portfolio-item.tall {
+    grid-row: span 2;
+    grid-column: span 1;
+  }
+  
+  .two .portfolio-item.wide {
+    grid-row: span 1;
     grid-column: span 3;
   }
 }
