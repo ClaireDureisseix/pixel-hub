@@ -521,16 +521,13 @@ footer a:hover {
 /* Photographe 1 */
 
 .one {
-  padding-top: 70px;
+  padding-top: 80px;
 }
 .portfolio {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
   grid-template-rows: repeat(6, 1fr);
   grid-gap: 1rem;
-}
-.portfolio-item {
-  
 }
 
 .portfolio img {
@@ -557,15 +554,15 @@ footer a:hover {
   font-style: italic;
 }
 
-.portfolio .portfolio-item:first-child {
+.child1 {
   grid-column: span 3;
   grid-row: span 6;
 }
-.portfolio .portfolio-item:nth-child(2) {
+.child2 {
   grid-column: span 3;
   grid-row: span 3;
 }
-.portfolio .portfolio-item:nth-child(3) {
+.child3 {
   grid-column: span 3;
   grid-row: span 3; 
 }
@@ -574,7 +571,7 @@ footer a:hover {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0.6rem 0.6rem;
+  padding: 1rem 1rem;
 }
 .infos-txt {
   color: #FFF;
@@ -608,15 +605,15 @@ footer a:hover {
 .two .main-title {
   justify-content: flex-end;
 }
-.two .portfolio .portfolio-item:first-child {
+.two .child1 {
   grid-column: span 3;
   grid-row: span 3;
 }
-.two .portfolio .portfolio-item:nth-child(2) {
+.two .child2 {
   grid-column: span 3;
   grid-row: span 6;
 }
-.two .portfolio .portfolio-item:nth-child(3) {
+.two .child3 {
   grid-column: span 3;
   grid-row: span 3;
 }
@@ -643,7 +640,7 @@ footer a:hover {
   }
 
   .portfolio img {
-    display:  ;
+    display: none;
   }
 
   .container-grid {
@@ -653,7 +650,6 @@ footer a:hover {
     flex-direction: column;
     align-items: center;
   }
-  
   .one .portfolio {
     width: 75%;
     height: 100%;
@@ -664,7 +660,7 @@ footer a:hover {
     grid-row: span 1;
     grid-column: span 1;
   }
-  
+
   .portfolio-item.large-square {
     grid-row: span 2;
     grid-column: span 2;
@@ -678,5 +674,24 @@ footer a:hover {
   .portfolio-item.wide {
     grid-row: span 3;
     grid-column: span 3;
+  }
+
+  .one .child1 {
+    background: url(img/object/bus-lautaro-andreani.jpg) center center / cover no-repeat;
+  }
+  .one .child2 {
+    background: url(img/object/carousel-chaussure-christian-rosswag.jpg) center center / cover no-repeat;
+  }
+  .one .child3 {
+    background: url(img/object/ryan-hafey-i5n6WHtvQ4c-unsplash.jpg) center center / cover no-repeat;
+  }
+  .one .child4 {
+    background: url(img/object/shane-rounce-LSye26vpjaI-unsplash.jpg) center center / cover no-repeat;
+  }
+  .one .child5 {
+    background: url(img/object/usine-france-damien-kuhn.jpg) center center / cover no-repeat;
+  }
+  .one .child6 {
+    background: url(img/object/kev-seto-Jv0TBnjzYNM-unsplash.jpg) center center / cover no-repeat;
   }
 }
