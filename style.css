@@ -810,6 +810,12 @@ footer a:hover {
   }
 }
 
+@media screen and (max-width: 768px) {
+  .portfolio-item{
+  animation-duration: 0.5s;
+  animation-name: opacity-items;
+  }
+} 
 @media screen and (min-width: 769px) and (max-width: 991px) {
   .portfolio{
   animation-duration: 0.5s;
