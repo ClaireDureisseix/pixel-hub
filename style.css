@@ -39,19 +39,22 @@ body {
   color: white;
   padding: 20px;
   text-align: center;
-  font-size: 1.2rem;
-  border-bottom: solid 1px white;
+  font-size: 1.5rem;
+  border-top: solid 1px white;
 }
 
 
-@media screen and (min-width: 766px) {
+@media screen and (min-width: 768px) {
   .bg-main>h2,
   .bg-secondary>h2 {
     width: 25%;
     min-width: 33%;
     text-align: left;
     white-space: nowrap;
+    border-top: none;
+    border-bottom: 1px solid white;
     border-bottom-right-radius: 30px;
+    font-size: 1.2rem;
   }
 }
 
@@ -115,7 +118,7 @@ body {
   white-space: nowrap;
 }
 
-@media screen and (max-width: 766px) {
+@media screen and (max-width: 768px) {
   .menu-container .links {
     display: none;
   }
@@ -222,7 +225,7 @@ a {
   color: #C89446;
 }
 
-@media screen and (min-width: 766px) {
+@media screen and (min-width: 768px) {
   .contactBtn {
     display: none;
   }
@@ -240,7 +243,7 @@ a {
   object-fit: cover;
 }
 
-@media screen and (min-width: 766px) {
+@media screen and (min-width: 768px) {
   .slides-img{
     height: 100vh;
   }
@@ -296,18 +299,23 @@ a {
 
 .about-container {
   height: max-content;
-  padding: 70px;
+  padding: 30px 0;
 }
 
 .about-container > .about-text{
-  font-size: .8rem;
+  font-size: 1.2rem;
   color: white;
   text-align: justify;
 }
 
 .about-text{
   padding: 0 30px 30px 30px;
-  border-left: 15px solid #2c5364c7;
+}
+
+@media screen and (min-width: 768px) {
+  .about-container > .about-text{
+    font-size: 0.8rem;
+  }
 }
 
 /* PARTNERS */
@@ -319,7 +327,7 @@ a {
   height: max-content;
   align-content: center;
   align-items: center;
-  padding: 50px;
+  padding: 30px;
   flex-wrap: wrap;
 }
 
@@ -328,7 +336,7 @@ a {
   transition: 0.3s;
   background: white;
   height: max-content;
-  width: max-content;
+  width: min-content;
   max-width: 365px;
   text-align: center;
   margin: 20px;
@@ -411,7 +419,7 @@ a {
 
 /* CONTACT */
 form {
-  padding: 50px;
+  padding: 30px;
   font-family: 'Roboto', sans-serif;
   display: flex;
   flex-direction: column;
@@ -424,7 +432,7 @@ select,
 textarea {
   font-weight: bold;
   font-size: 0.75rem;
-  width: 70%;
+  width: 93%;
   padding: 12px;
   border: 3px;
   border-radius: 4px;
@@ -454,6 +462,14 @@ textarea {
   color: rgb(216, 214, 213);
 }
 
+@media screen and (min-width: 768px) {
+  input[type=text],
+  input[type=email],
+  select,
+  textarea {
+    width: 70%;
+  }
+}
 
 /* FOOTER */
 footer {

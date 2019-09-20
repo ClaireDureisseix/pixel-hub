@@ -7,7 +7,6 @@ function closeContact() {
   document.getElementById("menu").style.height = "0";
 }
 
-
 // ci-dessous carousel
 
 // automatic carousel + dots
@@ -34,7 +33,12 @@ function showSlides(){
 }
 // manual carousel
 
+// FORM BTN ALERT
 
+const openNotWorkingAlert = () => alert('SOrry, this feature is not working yet.')
+const formBtn = document.getElementById('form-btn');
+
+formBtn.addEventListener('click', openNotWorkingAlert);
 
 
 /*automatic carousel ok
