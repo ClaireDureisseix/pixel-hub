@@ -163,29 +163,32 @@
   <form>
 
     <label class="contact">First Name</label>
-    <input type="text" id="fname" name="firstname" placeholder="Your name...">
+    <input type="text" id="fname" name="firstname" placeholder="ex: John">
 
     <label class="contact">Last Name</label>
-    <input type="text" id="lname" name="lastname" placeholder="Your last name...">
+    <input type="text" id="lname" name="lastname" placeholder="ex: Doe">
 
     <label class="contact">E-mail</label>
-    <input type="text" id="email" name="email" placeholder="Your e-mail..."
+    <input type="text" id="email" name="email" placeholder="ex: j.doe@doe.com"
       pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" title="Your email adress is invalid">
 
+    <label class="contact">The photograph</label>
       <select id="select">
-        <option value="">--Choose the photograph you want to learn with--</option>
+        <option value="" disabled selected hidden>Choose the photograph you want to learn with</option>
         <option value="1">Natalya Letunova</option>
         <option value="2">Mael Balland</option>
         <option value="3">Patrick Hendry</option>
         <option value="4">Pablo Garcia</option>
       </select>
 
-      <textarea placeholder="Your request..."></textarea>
+    <label class="contact">Your request</label>
+      <textarea placeholder="ex: I want to learn..."></textarea>
     
     <input type="submit" value="Send" class="btn"/>
     
-  </section>
   </form>
+  </section>
+
   <!-- CONTACT END  -->
 
   <!--FOOTER-->
