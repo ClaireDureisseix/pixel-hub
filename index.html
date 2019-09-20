@@ -169,31 +169,33 @@
     <h2><i class="fas fa-envelope-square"></i> CONTACT US</h2>
 
   <form>
-    
-    <label class="contact"> First Name</label>
-    <input type="text" id="fname" name="firstname" placeholder="Your name...">
+    <label><div class="contact">First Name</div></label>
+    <input type="text" id="fname" name="firstname" placeholder="ex: John" required>
 
-    <label class="contact">Last Name</label>
-    <input type="text" id="lname" name="lastname" placeholder="Your last name...">
+    <label><div class="contact">Last Name</div></label>
+    <input type="text" id="lname" name="lastname" placeholder="ex: Doe" required>
 
-    <label class="contact">E-mail</label>
-    <input type="text" id="email" name="email" placeholder="Your e-mail..."
-      pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" title="Your email adress is invalid">
+    <label><div class="contact">Email</div></label>
+    <input type="text" id="email" name="email" placeholder="ex: j.doe@doe.com"
+      pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" title="Your email adress is invalid" required>
 
+    <label><div class="contact">The photograph</div></label>
       <select id="select">
-        <option value="">--Choose the photograph you want to learn with--</option>
+        <option value="" disabled selected hidden>Choose the photograph you want to learn with</option>
         <option value="1">Natalya Letunova</option>
         <option value="2">Mael Balland</option>
         <option value="3">Patrick Hendry</option>
         <option value="4">Pablo Garcia</option>
       </select>
 
-      <textarea placeholder="Your request..."></textarea>
+    <label><div class="contact">Your Request</div></label>
+      <textarea placeholder="ex: I want to learn..." required></textarea>
     
     <input type="submit" data-disabled="true" value="Send" class="btn"/>
     
-  </section>
   </form>
+  </section>
+
   <!-- CONTACT END  -->
 
   <!--FOOTER-->

@@ -428,18 +428,21 @@ form {
 
 input[type=text],
 input[type=email],
-select,
-textarea {
+select, textarea {
   font-weight: bold;
   font-size: 0.75rem;
   width: 93%;
   padding: 12px;
   border: 3px;
   border-radius: 4px;
-  margin-top: 6px;
-  margin-bottom: 16px;
+  margin-top: 1px;
+  margin-bottom: 20px;
   resize: vertical;
   white-space: normal;
+}
+
+textarea {
+  height:150px;
 }
 
 .contact {
@@ -455,6 +458,7 @@ textarea {
   text-align: center;
   cursor: pointer;
   padding: 15px 30px;
+  margin-bottom: 15px;
   border-radius: 3px;
 }
 
