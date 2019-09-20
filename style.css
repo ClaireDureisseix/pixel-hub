@@ -84,9 +84,13 @@ body {
   justify-content: flex-end;
 }
 
-.links a {
+.menu a, .links a {
   color: white;
   text-decoration: none;
+}
+
+.menu a:hover{
+  opacity: 0.9;
 }
 
 .links a:hover {
@@ -435,12 +439,10 @@ textarea {
   border: none;
   color: white;
   font-size: 0.75rem;
-  height: 30px;
-  padding: initial;
-  width: 70px;
   text-align: center;
-  margin-bottom: 30px;
   cursor: pointer;
+  padding: 15px 30px;
+  border-radius: 3px;
 }
 
 .btn:hover {
