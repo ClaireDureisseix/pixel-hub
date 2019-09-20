@@ -84,17 +84,12 @@
   <section class="bg-secondary">
     <h2><i class="fas fa-camera"></i> CONCEPT</h2>
     <div class="about-container">
-      <p>
-        Tingling of the spine citizens of distant epochs cosmic fugue great turbulent clouds dream of the mind's eye
-        colonies?
-        Permanence of the stars take root and flourish dispassionate extraterrestrial observer Rig Veda star stuff
-        harvesting star light dispassionate extraterrestrial observer.
-        Descended from astronomers vastness is bearable only through love network of wormholes extraordinary claims
-        require extraordinary evidence invent the universe Orion's sword?
-        From which we spring vastness is bearable only through love from which we spring with pretty stories for which
-        there's little good evidence a very small stage in a vast
-        cosmic arena star stuff harvesting star light and billions upon billions upon billions upon billions upon
-        billions upon billions upon billions.
+      <p class="about-text">
+        Tingling of the spine citizens of distant epochs cosmic fugue great turbulent clouds dream of the mind's eye colonies? 
+        Permanence of the stars take root and flourish dispassionate extraterrestrial observer Rig Veda star stuff harvesting star light dispassionate extraterrestrial observer. 
+        Descended from astronomers vastness is bearable only through love network of wormholes extraordinary claims require extraordinary evidence invent the universe Orion's sword? 
+        From which we spring vastness is bearable only through love from which we spring with pretty stories for which there's little good evidence a very small stage in a vast 
+        cosmic arena star stuff harvesting star light and billions upon billions upon billions upon billions upon billions upon billions upon billions.
       </p>
     </div>
 
@@ -169,6 +164,7 @@
   <section id="contact" class="bg-secondary">
     <h2><i class="fas fa-envelope-square"></i> CONTACT US</h2>
 
+<<<<<<< HEAD
     <form>
 
       <label class="contact">First Name</label>
@@ -180,21 +176,44 @@
       <label class="contact">E-mail</label>
       <input type="text" id="email" name="email" placeholder="Your e-mail..."
         pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" title="Your email adress is invalid">
+=======
+  <form>
+    <label><div class="contact">First Name</div></label>
+    <input type="text" id="fname" name="firstname" placeholder="ex: John" required>
 
+    <label><div class="contact">Last Name</div></label>
+    <input type="text" id="lname" name="lastname" placeholder="ex: Doe" required>
+
+    <label><div class="contact">Email</div></label>
+    <input type="text" id="email" name="email" placeholder="ex: j.doe@doe.com"
+      pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" title="Your email adress is invalid" required>
+>>>>>>> dev
+
+    <label><div class="contact">The photograph</div></label>
       <select id="select">
-        <option value="">--Choose the photograph you want to learn with--</option>
+        <option value="" disabled selected hidden>Choose the photograph you want to learn with</option>
         <option value="1">Natalya Letunova</option>
         <option value="2">Mael Balland</option>
         <option value="3">Patrick Hendry</option>
         <option value="4">Pablo Garcia</option>
       </select>
 
+<<<<<<< HEAD
       <textarea placeholder="Your request..."></textarea>
 
       <input type="submit" value="Send" class="btn" />
 
   </section>
+=======
+    <label><div class="contact">Your Request</div></label>
+      <textarea placeholder="ex: I want to learn..." required></textarea>
+    
+    <input type="submit" data-disabled="true" value="Send" class="btn"/>
+    
+>>>>>>> dev
   </form>
+  </section>
+
   <!-- CONTACT END  -->
 
   <!--FOOTER-->
@@ -208,7 +227,7 @@
 
     <div class="rightFooter">
       <a href="#contact" title="If you want to contact us">Contact Us</a>
-      <a href="legal_mentions.html" title="Our conditions and legal notice">Legal mentions</a>
+      <a data-disabled="true" title="Our conditions and legal notice">Legal mentions</a>
     </div>
   </footer>
 
