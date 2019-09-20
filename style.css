@@ -299,10 +299,16 @@ a {
   padding: 70px;
 }
 
-.about-container>p {
+
+.about-container > .about-text{
   font-size: .8rem;
   color: white;
   text-align: justify;
+}
+
+.about-text{
+  padding: 0 30px 30px 30px;
+  border-left: 15px solid #2c5364c7;
 }
 
 /* PARTNERS */
