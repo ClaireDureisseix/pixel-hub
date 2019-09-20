@@ -222,7 +222,6 @@ a {
   color: #C89446;
 }
 
-
 @media screen and (min-width: 766px) {
   .contactBtn {
     display: none;
@@ -301,10 +300,6 @@ a {
 }
 
 .about-container > .about-text{
-  font-size: 16px;
-}
-
-.about-container>p {
   font-size: .8rem;
   color: white;
   text-align: justify;
