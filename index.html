@@ -6,7 +6,8 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <script src="https://kit.fontawesome.com/93f0a7d061.js"></script>
   <link rel="stylesheet" href="style.css" />
-  <link href="https://fonts.googleapis.com/css?family=Roboto:300i,400,400i,500i,700|Turret+Road:400,800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300i,400,400i,500i,700|Turret+Road:400,800&display=swap"
+    rel="stylesheet">
   <title>Pixel Hub</title>
 </head>
 
@@ -17,7 +18,7 @@
     <!-- NAVBAR desktop -->
     <div class='menu-container'>
       <div class='menu'>
-        <div class='brand'>Pixel HUB</div>
+        <div class='brand'><a href="index.html">Pixel HUB</a></div>
         <div class='links'>
           <div class='menu-right'><a href="landscapes.html">Landscapes</a></div>
           <div class='menu-right'><a href="alone.html">Alone</a></div>
@@ -53,33 +54,27 @@
   </header>
 
   <!--CAROUSEL-->
+
   <div class="slides-container">
     <div class="slides">
       <img class="slides-img" src="img/architecture/carousel-joseph-barrientos-UbWhP0J8dsw-unsplash.jpg" alt="">
+      <a href="architecture.html"><button class="carousel_button">Discover the architecture's artists</button></a>
     </div>
     <div class="slides">
       <img class="slides-img" src="img/alone/carousel-scene-christoph-peich.jpg" alt="">
+      <a href="alone.html"> <button class="carousel_button">The art of picturing someone in the middle of nowhere</button></a>
     </div>
     <div class="slides">
       <img class="slides-img" src="img/landscape/carousel-mael-balland.jpg" alt="">
+      <a href="landscapes.html"> <button class="carousel_button">Discover the landscapes' artists</button></a>
     </div>
     <div class="slides">
       <img class="slides-img" src="img/object/carousel-chaussure-christian-rosswag.jpg" alt="">
-    </div>
-
-    <a class="left-arrow">&#10094;</a>
-    <a class="right-arrow">&#10095;</a>
-
-    <div class="dots-container">
-      <div class="dots"></div>
-      <div class="dots"></div>
-      <div class="dots"></div>
-      <div class="dots"></div>
-    </div>
+      <a href="objects.html"> <button class="carousel_button">The art of picturing objects</button></a> </div>
+    <!--<a class="left-arrow">&#10094;</a>
+      <a class="right-arrow">&#10095;</a>-->
 
   </div>
-
-  <!-- dots -->
 
 
   <!-- CAROUSEL END -->
@@ -89,7 +84,7 @@
   <section class="bg-secondary">
     <h2><i class="fas fa-camera"></i> CONCEPT</h2>
     <div class="about-container">
-      <p>
+      <p class="about-text">
         Tingling of the spine citizens of distant epochs cosmic fugue great turbulent clouds dream of the mind's eye
         colonies?
         Permanence of the stars take root and flourish dispassionate extraterrestrial observer Rig Veda star stuff
@@ -153,7 +148,8 @@
         <p class="img-description">
           The beautiful straight lines of Patricks photographies are like a beautiful painting or a Wes Anderson's
           movie. Nothing is overflowing, everything is where it meant to be.
-          Patrick is a perfectionist and a great teacher. If you like architecture, Patrick can chow you places unknown
+          Patrick is a perfectionist and a great teacher. If you like architecture, Patrick can chow you places
+          unknown
           to the entire world.
         </p>
         <img src="img/cards/patrick-hendry.jpeg" alt="">
@@ -173,32 +169,44 @@
   <section id="contact" class="bg-secondary">
     <h2><i class="fas fa-envelope-square"></i> CONTACT US</h2>
 
-  <form>
+    <form>
+      <label>
+        <div class="contact">First Name</div>
+      </label>
+      <input type="text" id="fname" name="firstname" placeholder="ex: John" required>
 
-    <label class="contact">First Name</label>
-    <input type="text" id="fname" name="firstname" placeholder="Your name...">
+      <label>
+        <div class="contact">Last Name</div>
+      </label>
+      <input type="text" id="lname" name="lastname" placeholder="ex: Doe" required>
 
-    <label class="contact">Last Name</label>
-    <input type="text" id="lname" name="lastname" placeholder="Your last name...">
+      <label>
+        <div class="contact">Email</div>
+      </label>
+      <input type="text" id="email" name="email" placeholder="ex: j.doe@doe.com"
+        pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" title="Your email adress is invalid" required>
 
-    <label class="contact">E-mail</label>
-    <input type="text" id="email" name="email" placeholder="Your e-mail..."
-      pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" title="Your email adress is invalid">
-
+      <label>
+        <div class="contact">The photograph</div>
+      </label>
       <select id="select">
-        <option value="">--Choose the photograph you want to learn with--</option>
+        <option value="" disabled selected hidden>Choose the photograph you want to learn with</option>
         <option value="1">Natalya Letunova</option>
         <option value="2">Mael Balland</option>
         <option value="3">Patrick Hendry</option>
         <option value="4">Pablo Garcia</option>
       </select>
 
-      <textarea placeholder="Your request..."></textarea>
-    
-    <input type="submit" value="Send" class="btn"/>
-    
+      <label>
+        <div class="contact">Your Request</div>
+      </label>
+      <textarea placeholder="ex: I want to learn..." required></textarea>
+
+      <input type="submit" data-disabled="true" value="Send" class="btn" />
+
+    </form>
   </section>
-  </form>
+
   <!-- CONTACT END  -->
 
   <!--FOOTER-->
@@ -211,8 +219,8 @@
     </div>
 
     <div class="rightFooter">
-      <a href="index.html#contact" title="If you want to contact us">Contact Us</a>
-      <a href="legal_mentions.html" title="Our conditions and legal notice">Legal mentions</a>
+      <a href="#contact" title="If you want to contact us">Contact Us</a>
+      <a data-disabled="true" title="Our conditions and legal notice">Legal mentions</a>
     </div>
   </footer>
 
