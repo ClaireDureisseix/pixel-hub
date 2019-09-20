@@ -457,9 +457,9 @@ textarea {
   font-size: 0.75rem;
 }
 
-.btn {
+.btn2 {
   border: none;
-  color: white;
+
   font-size: 0.75rem;
   text-align: center;
   cursor: pointer;
@@ -468,7 +468,7 @@ textarea {
   border-radius: 3px;
 }
 
-.btn:hover {
+.btn2:hover {
   color: rgb(216, 214, 213);
 }
 
