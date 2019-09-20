@@ -1,14 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="style.css">
   <script src="https://kit.fontawesome.com/93f0a7d061.js"></script>
-  <link href="https://fonts.googleapis.com/css?family=Roboto:300i,400,400i,500i,700|Turret+Road:400,800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300i,400,400i,500i,700|Turret+Road:400,800&display=swap"
+    rel="stylesheet">
   <title>Objects</title>
 </head>
+
 <body>
   <header>
     <!-- NAVBAR desktop -->
@@ -16,11 +19,11 @@
       <div class='menu'>
         <div class='brand'><a href="index.html">Pixel HUB</a></div>
         <div class='links'>
-            <div class='menu-right actived'><a href="landscapes.html">Landscapes</a></div>
-            <div class='menu-right'><a href="alone.html">Alone</a></div>
-            <div class='menu-right'><a href="objects.html">Objects</a></div>
-            <div class='menu-right'><a href="architecture.html">Architecture</a></div>
-            <div class='menu-right'><a href="index.html#contact">Contact</a></div>
+          <div class='menu-right'><a href="landscapes.html">Landscapes</a></div>
+          <div class='menu-right'><a href="alone.html">Alone</a></div>
+          <div class='menu-right'><a href="objects.html">Objects</a></div>
+          <div class='menu-right'><a href="architecture.html">Architecture</a></div>
+          <div class='menu-right'><a href="index.html#contact">Contact</a></div>
         </div>
       </div>
     </div>
@@ -32,18 +35,19 @@
       <div class="overlay-content">
         <div>
           <ul>
-            <li><a class="actived" href="landscapes.html">Landscape</a></li>
+            <li><a href="landscapes.html">Landscape</a></li>
             <li><a href="alone.html">Alone</a></li>
             <li><a href="objects.html">Objects</a></li>
             <li><a href="architecture.html">Architecture</a></li>
-            <li class="phone"><a href="index.html#contact">Contact</a></li>
+            <div>
+              <li class="phone"><a href="index.html#contact" <i class="far fa-paper-plane"></i> Contact </a> </li>
+            </div>
           </ul>
         </div>
       </div>
     </div>
-
-    <div class="contactBtn">
-      <span id="contactBtnJs" onclick="openContact()"><img src="img/icone/menu.png" alt=""></span>
+    <div class="contactBtn" id="contactBtn">
+      <span id="contactBtnJs" class="btn" onclick="openContact()"><img src="img/icone/menu.png" alt="menu"></span>
     </div>
     <!-- NAVBAR END -->
   </header>
@@ -90,26 +94,27 @@
       </div>
     </div>
   </section>
-  
+
   <!-- GALLERY END -->
 
   <!--FOOTER-->
   <footer class="bg-heads">
-      <div class="leftFooter">
-        <a class="actived" href="landscapes.html" title="See the landscapes project">Landscapes</a>
-        <a href="alone.html" title="See the alone project">Alone</a>
-        <a href="objects.html" title="See the objects project">Objects</a>
-        <a href="architecture.html" title="See the architecture project">Architecture</a>
-      </div>
-  
-      <div class="rightFooter">
-        <a href="#contact" title="If you want to contact us">Contact Us</a>
-        <a href="legal_mentions.html" title="Our conditions and legal notice">Legal mentions</a>
-      </div>
-    </footer>
-  
-    <!--FOOTER END-->
+    <div class="leftFooter">
+      <a class="actived" href="landscapes.html" title="See the landscapes project">Landscapes</a>
+      <a href="alone.html" title="See the alone project">Alone</a>
+      <a href="objects.html" title="See the objects project">Objects</a>
+      <a href="architecture.html" title="See the architecture project">Architecture</a>
+    </div>
+
+    <div class="rightFooter">
+      <a href="#contact" title="If you want to contact us">Contact Us</a>
+      <a href="legal_mentions.html" title="Our conditions and legal notice">Legal mentions</a>
+    </div>
+  </footer>
+
+  <!--FOOTER END-->
 
   <script src="js/index.js"></script>
 </body>
+
 </html>

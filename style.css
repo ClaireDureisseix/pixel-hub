@@ -239,7 +239,7 @@ a {
 
 ul div {
   position: absolute;
-  left: 0;
+  top: 50px;
   bottom: 55px;
   transform: rotate(270deg);
 }
