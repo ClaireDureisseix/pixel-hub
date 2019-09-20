@@ -6,7 +6,8 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <script src="https://kit.fontawesome.com/93f0a7d061.js"></script>
   <link rel="stylesheet" href="style.css" />
-  <link href="https://fonts.googleapis.com/css?family=Roboto:300i,400,400i,500i,700|Turret+Road:400,800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300i,400,400i,500i,700|Turret+Road:400,800&display=swap"
+    rel="stylesheet">
   <title>Pixel Hub</title>
 </head>
 
@@ -39,14 +40,15 @@
             <li><a href="alone.html">Alone</a></li>
             <li><a href="objects.html">Objects</a></li>
             <li><a href="architecture.html">Architecture</a></li>
-            <li class="phone"><a href="index.html#contact">Contact</a></li>
+            <div>
+              <li class="phone"><a href="index.html#contact" <i class="far fa-paper-plane"></i> Contact </a> </li>
+            </div>
           </ul>
         </div>
       </div>
     </div>
-
-    <div class="contactBtn">
-      <span id="contactBtnJs" onclick="openContact()"><img src="img/icone/menu.png" alt=""></span>
+    <div class="contactBtn" id="contactBtn">
+      <span id="contactBtnJs" class="btn" onclick="openContact()"><img src="img/icone/menu.png" alt="menu"></span>
     </div>
     <!-- NAVBAR END -->
 
@@ -90,11 +92,16 @@
     <h2><i class="fas fa-camera"></i> CONCEPT</h2>
     <div class="about-container">
       <p class="about-text">
-        Tingling of the spine citizens of distant epochs cosmic fugue great turbulent clouds dream of the mind's eye colonies? 
-        Permanence of the stars take root and flourish dispassionate extraterrestrial observer Rig Veda star stuff harvesting star light dispassionate extraterrestrial observer. 
-        Descended from astronomers vastness is bearable only through love network of wormholes extraordinary claims require extraordinary evidence invent the universe Orion's sword? 
-        From which we spring vastness is bearable only through love from which we spring with pretty stories for which there's little good evidence a very small stage in a vast 
-        cosmic arena star stuff harvesting star light and billions upon billions upon billions upon billions upon billions upon billions upon billions.
+        Tingling of the spine citizens of distant epochs cosmic fugue great turbulent clouds dream of the mind's eye
+        colonies?
+        Permanence of the stars take root and flourish dispassionate extraterrestrial observer Rig Veda star stuff
+        harvesting star light dispassionate extraterrestrial observer.
+        Descended from astronomers vastness is bearable only through love network of wormholes extraordinary claims
+        require extraordinary evidence invent the universe Orion's sword?
+        From which we spring vastness is bearable only through love from which we spring with pretty stories for which
+        there's little good evidence a very small stage in a vast
+        cosmic arena star stuff harvesting star light and billions upon billions upon billions upon billions upon
+        billions upon billions upon billions.
       </p>
     </div>
 
@@ -168,17 +175,17 @@
   <section id="contact" class="bg-secondary">
     <h2><i class="fas fa-envelope-square"></i> CONTACT US</h2>
 
-  <form>
+    <form>
 
-    <label class="contact">First Name</label>
-    <input type="text" id="fname" name="firstname" placeholder="Your name...">
+      <label class="contact">First Name</label>
+      <input type="text" id="fname" name="firstname" placeholder="Your name...">
 
-    <label class="contact">Last Name</label>
-    <input type="text" id="lname" name="lastname" placeholder="Your last name...">
+      <label class="contact">Last Name</label>
+      <input type="text" id="lname" name="lastname" placeholder="Your last name...">
 
-    <label class="contact">E-mail</label>
-    <input type="text" id="email" name="email" placeholder="Your e-mail..."
-      pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" title="Your email adress is invalid">
+      <label class="contact">E-mail</label>
+      <input type="text" id="email" name="email" placeholder="Your e-mail..."
+        pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" title="Your email adress is invalid">
 
       <select id="select">
         <option value="">--Choose the photograph you want to learn with--</option>
@@ -189,9 +196,9 @@
       </select>
 
       <textarea placeholder="Your request..."></textarea>
-    
-    <input type="submit" value="Send" class="btn"/>
-    
+
+      <input type="submit" value="Send" class="btn" />
+
   </section>
   </form>
   <!-- CONTACT END  -->
