@@ -22,6 +22,7 @@ body {
   font-family: 'Roboto', sans-serif;
   line-height: 1.5;
   font-family: 'Roboto', sans-serif;
+  background: #2c5364;
 
 }
 
@@ -137,9 +138,24 @@ body {
   .menu-container .links {
     display: none;
   }
+
+  .text-auth{
+    display: none;
+  }
 }
 
 .menu-auth{
+  align-self: center;
+  margin: 0 5vw 0 auto;
+}
+
+.btn-auth{
+  padding: 10px;
+  background: transparent;
+  color: white;
+  border: none;
+  font-weight: bold;
+  font-size: .8rem;
 }
 
 /* navbar mobile */
@@ -274,6 +290,7 @@ ul div li {
 /* slides start */
 .slides-container {
   position: relative;
+  padding-top: 4.9rem;
 }
 
 .slides-img {
@@ -285,6 +302,10 @@ ul div li {
 @media screen and (min-width: 766px) {
   .slides-img {
     height: 100vh;
+  }
+
+  .slides-container{
+    padding: 0;
   }
 }
 
