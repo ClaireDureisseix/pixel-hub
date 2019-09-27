@@ -29,7 +29,25 @@
           <div class='menu-right'><a href="index.html#contact">Contact</a></div>
         </div>
         <div class="menu-auth">
-          <button class="btn-auth"><i class="fas fa-user"></i><span class="text-auth"> Log in</span></button>
+          <button id="logInModalBtn" class="btn-auth"><i class="fas fa-user"></i><span id="logInText" class="text-auth"> Log in</span></button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Authentification Modal -->
+    <div id="logInModal" class="login-modal">
+      <div class="login-modal-content">
+        <div class="login-modal-title">
+          <h2>Log in</h2>
+          <span id="closeBtnModal" class="login-close-button">&times;</span>
+        </div>
+        <div class="login-modal-body">
+          <input id="userFirstName" type="text" placeholder="Your Name">
+          <input id="userLastName" type="text" placeholder="Your Last Name" >
+          <input id="userMail" type="email" placeholder="Your Mail">
+        </div>
+        <div class="login-modal-footer">
+          <button id="logInBtn">Let's go!</button>
         </div>
       </div>
     </div>
