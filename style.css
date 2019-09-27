@@ -75,21 +75,26 @@ body {
   padding: 20px 0;
   display: flex;
   justify-content: center;
+  align-content: center;
+  align-items: center;
   position: fixed;
   z-index: 200;
-  width: 100%;
+  width: 100vw;
 }
 
 .menu {
-  width: 900px;
+  width: 100vw;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  justify-content: flex-start;
+  flex-direction: row;
 }
 
 .links {
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
+  flex-direction: row;
+  align-content: center;
+  align-items: center;
 }
 
 .menu a,
@@ -132,6 +137,9 @@ body {
   .menu-container .links {
     display: none;
   }
+}
+
+.menu-auth{
 }
 
 /* navbar mobile */
