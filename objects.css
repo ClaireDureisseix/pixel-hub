@@ -1,22 +1,26 @@
 /* IMAGES DE LA CATEGORIE OBJECTS */
-.one .child1 {
-  background: url(img/object/bus-lautaro-andreani.jpg) center center / cover no-repeat;
+.portfolio-item {
+  background: center center / cover no-repeat;
 }
-.one .child2 {
-  background: url(img/object/carousel-chaussure-christian-rosswag.jpg) center center / cover no-repeat;
-}
+/* .one .child1 {
+  background-image: url(img/object/bus-lautaro-andreani.jpg);
+} */
+/* .one .child2 {
+  background-image: url(img/object/carousel-chaussure-christian-rosswag.jpg);
+} */
 .one .child3 {
-  background: url(img/object/ryan-hafey-i5n6WHtvQ4c-unsplash.jpg) center center / cover no-repeat;
+  background-image: url(img/object/ryan-hafey-i5n6WHtvQ4c-unsplash.jpg);
 }
 .one .child4 {
-  background: url(img/object/shane-rounce-LSye26vpjaI-unsplash.jpg) center center / cover no-repeat;
+  background-image: url(img/object/shane-rounce-LSye26vpjaI-unsplash.jpg);
 }
 .one .child5 {
-  background: url(img/object/usine-france-damien-kuhn.jpg) center center / cover no-repeat;
+  background-image: url(img/object/usine-france-damien-kuhn.jpg);
 }
 .one .child6 {
-  background: url(img/object/kev-seto-Jv0TBnjzYNM-unsplash.jpg) center center / cover no-repeat;
+  background-image: url(img/object/kev-seto-Jv0TBnjzYNM-unsplash.jpg);
 }
+
 .two .child1 {
   background: url(img/objects/hoshino.jpeg) center center / cover no-repeat;
 }
@@ -50,19 +54,37 @@
   z-index: 2000;
   left: 0;
   top: 0;
-  padding-top: 70px;
   width: 100%;
+  padding: 10vh 0;
   height: 100vh;
   overflow: auto; 
   background-color: rgb(0,0,0); 
   background-color: rgba(0,0,0,0.9);
 }
 
+/* Image container */
+.img-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  transition: .3s;
+}
+.arrow-left, .arrow-right {
+  /* visibility: hidden; */
+  fill: lightgrey;
+  cursor: pointer;
+}
+.arrow-left:hover, .arrow-right:hover {
+  visibility: visible;
+}
+
 /* Modal Content (Image) */
 .modal-content {
   display: block;
-  margin: 0 auto;
-  width: auto;
+  margin: 0;
+  padding: 0 50px;
+  width: inherit;
   max-width: 80%;
   height: 80vh;
 }
