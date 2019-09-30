@@ -96,6 +96,9 @@ const logInSucceed = () =>{
   if(name.length > 0 && mail.length > 0 && lastName.length > 0 ){
     toggleLogInModal()
     logInText.innerHTML = ` ${name}`
+    userFirstName.value = ""
+    userLastName.value = ""
+    userMail.value = ""
   } else{
     alert('All the fields must be filled.')
   }
