@@ -368,6 +368,9 @@ ul div li {
   align-items: center;
   padding: 30px;
   flex-wrap: wrap;
+  opacity: 0;
+  transform: translateX(-20px);
+  transition: 0.7s all ease-in;
 }
 
 .card {
@@ -379,6 +382,12 @@ ul div li {
   max-width: 365px;
   text-align: center;
   margin: 20px;
+  
+}
+
+.card-appear{
+  opacity: 1;
+  transform: translateY(0px);
 }
 
 .card>img {

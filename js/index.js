@@ -110,3 +110,16 @@ logInModalBtn.addEventListener('click', () => toggleLogInModal());
 closeBtnModal.addEventListener('click', () => toggleLogInModal());
 logInBtn.addEventListener('click', () => logInSucceed());
 
+
+// Cards appearing
+
+scrollCardsAppear = () =>{
+  const cardPartners = document.querySelector('.card-container');
+  const cardPosition = cardPartners.getBoundingClientRect().top;
+  const screenPosition = window.innerHeight / 2;
+  if(cardPosition < screenPosition){
+    cardPartners.classList.add('card-appear');
+  }
+}
+
+window.addEventListener('scroll', scrollCardsAppear);
