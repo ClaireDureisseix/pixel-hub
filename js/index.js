@@ -76,6 +76,8 @@ function showSlides(){
 const logInModalBtn = document.getElementById('logInModalBtn');
 const logInText = document.getElementById('logInText');
 const logInModal = document.getElementById('logInModal');
+const logInModalBody = document.getElementById('logInModalBody');
+const logInModalFooter = document.getElementById('logInModalFooter');
 const closeBtnModal = document.getElementById('closeBtnModal');
 const userFirstName = document.getElementById('userFirstName');
 const userLastName = document.getElementById('userLastName');
@@ -97,6 +99,8 @@ const logInSucceed = () =>{
   } else{
     alert('All the fields must be filled.')
   }
+  logInModalBody.innerHTML = 'You are already logged in. Congratulations'
+  logInModalFooter.innerHTML = ""
 }
 
 logInModalBtn.addEventListener('click', () => toggleLogInModal());
