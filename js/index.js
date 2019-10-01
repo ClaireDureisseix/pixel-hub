@@ -9,7 +9,7 @@ const closeMenu = () => {
 
 // Hide and show on click button MENU mobile
 
-const showOffButton = document.getElementById("contactBtnJs");
+const showOffButton = document.getElementById("contactBtnJs"); 
 const toggleShowOffButton = () => {
   showOffButton.style.display = "none";
 };
@@ -92,6 +92,10 @@ const logInSucceed = () => {
   logInModalBody.innerHTML = "You are already logged in. Congratulations";
   logInModalFooter.innerHTML = "";
 };
+
+logInModalBtn.addEventListener('click', toggleLogInModal)
+logInBtn.addEventListener('click', logInSucceed)
+closeBtnModal.addEventListener('click', toggleLogInModal)
 
 // Cards appearing effect + concept appearing effect
 const screenPosition = window.innerHeight / 2;
