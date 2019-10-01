@@ -16,6 +16,7 @@ const toggleShowOffButton = () => {
 showOffButton.addEventListener("click", () => toggleShowOffButton());
 
 document.getElementById("closebtnID").addEventListener("click", showOnButton);
+
 function showOnButton() {
   document.getElementsByClassName((contactBtnJs.style.display = "block"));
 }
