@@ -111,7 +111,7 @@ closeBtnModal.addEventListener('click', () => toggleLogInModal());
 logInBtn.addEventListener('click', () => logInSucceed());
 
 
-// Cards appearing
+// Cards appearing effect
 
 scrollCardsAppear = () =>{
   const cardPartners = document.querySelector('.card-container');
