@@ -71,12 +71,10 @@
   transition: .3s;
 }
 .arrow-left, .arrow-right {
-  /* visibility: hidden; */
+  display: none;
   fill: lightgrey;
   cursor: pointer;
-}
-.arrow-left:hover, .arrow-right:hover {
-  visibility: visible;
+  transition: .3s;
 }
 
 /* Modal Content (Image) */
@@ -84,7 +82,7 @@
   display: block;
   margin: 0;
   padding: 0 50px;
-  width: inherit;
+  width: auto;
   max-width: 80%;
   height: 80vh;
 }
@@ -128,11 +126,4 @@
   color: #bbb;
   text-decoration: none;
   cursor: pointer;
-}
-
-/* 100% Image Width on Smaller Screens */
-@media only screen and (min-width: 768px){
-  .modal-content {
-    width: 80%;
-  }
 }
