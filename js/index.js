@@ -111,15 +111,25 @@ closeBtnModal.addEventListener('click', () => toggleLogInModal());
 logInBtn.addEventListener('click', () => logInSucceed());
 
 
-// Cards appearing effect
+// Cards appearing effect + concept appearing effect
+const screenPosition = window.innerHeight / 2;
+
 
 scrollCardsAppear = () =>{
   const cardPartners = document.querySelector('.card-container');
   const cardPosition = cardPartners.getBoundingClientRect().top;
-  const screenPosition = window.innerHeight / 2;
   if(cardPosition < screenPosition){
     cardPartners.classList.add('card-appear');
   }
 }
 
+scrollConceptAppear = () => {
+  const conceptBlock = document.querySelector('.about-container');
+  const conceptPosition = conceptBlock.getBoundingClientRect().top;
+  if(conceptPosition < screenPosition){
+    conceptBlock.classList.add('about-appear');
+  }
+}
+
+window.addEventListener('scroll', scrollConceptAppear);
 window.addEventListener('scroll', scrollCardsAppear);
