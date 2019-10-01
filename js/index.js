@@ -83,6 +83,9 @@ const logInSucceed = () => {
   if (name.length > 0 && mail.length > 0 && lastName.length > 0) {
     toggleLogInModal();
     logInText.innerHTML = ` ${name}`;
+    userFirstName.value = "";
+    userLastName.value = "";
+    userMail.value = "";
   } else {
     alert("All the fields must be filled.");
   }
@@ -90,6 +93,24 @@ const logInSucceed = () => {
   logInModalFooter.innerHTML = "";
 };
 
-logInModalBtn.addEventListener("click", () => toggleLogInModal());
-closeBtnModal.addEventListener("click", () => toggleLogInModal());
-logInBtn.addEventListener("click", () => logInSucceed());
+// Cards appearing effect + concept appearing effect
+const screenPosition = window.innerHeight / 2;
+
+scrollCardsAppear = () => {
+  const cardPartners = document.querySelector(".card-container");
+  const cardPosition = cardPartners.getBoundingClientRect().top;
+  if (cardPosition < screenPosition) {
+    cardPartners.classList.add("card-appear");
+  }
+};
+
+scrollConceptAppear = () => {
+  const conceptBlock = document.querySelector(".about-container");
+  const conceptPosition = conceptBlock.getBoundingClientRect().top;
+  if (conceptPosition < screenPosition) {
+    conceptBlock.classList.add("about-appear");
+  }
+};
+
+window.addEventListener("scroll", scrollConceptAppear);
+window.addEventListener("scroll", scrollCardsAppear);
