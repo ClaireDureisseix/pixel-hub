@@ -13,27 +13,27 @@ const portfolioChilds2 = portfolio2.children
 const modalCarousel = portfolioChilds => {
   for(let i = 0; i < portfolioChilds.length; i++){
     portfolioChilds[i].addEventListener('click', () =>{
-      let url = this.event.target.style.backgroundImage.split('"')[1];
-      modal.style.display = "flex";
-      modal.style.justifyContent = "center";
-      modal.style.alignItems = "center";
-      modalImg.src = url;
+      let url = this.event.target.style.backgroundImage.split('"')[1]
+      modal.style.display = "flex"
+      modal.style.justifyContent = "center"
+      modal.style.alignItems = "center"
+      modalImg.src = url
       //modalImg.style.width = "auto";
       next.addEventListener('click', () =>{
         if(i === portfolioChilds.length){
           i = 0
-          url = portfolioChilds[i].style.backgroundImage.split('"')[1];
+          url = portfolioChilds[i].style.backgroundImage.split('"')[1]
         }else{
-          url = portfolioChilds[i++ + 1].style.backgroundImage.split('"')[1];
+          url = portfolioChilds[i++ + 1].style.backgroundImage.split('"')[1]
         }
-        modalImg.src = url;
+        modalImg.src = url
       })
       prev.addEventListener('click', () =>{
         if(i === 0){
           i = portfolioChilds.length
-          url = portfolioChilds[i].style.backgroundImage.split('"')[1];
+          url = portfolioChilds[i].style.backgroundImage.split('"')[1]
         }else{
-          url = portfolioChilds[i-- - 1].style.backgroundImage.split('"')[1];
+          url = portfolioChilds[i-- - 1].style.backgroundImage.split('"')[1]
         }
         modalImg.src = url;
       })
@@ -44,13 +44,13 @@ modalCarousel(portfolioChilds1)
 modalCarousel(portfolioChilds2)
 
 // Closes the modal on click
-const closeBtn = document.getElementsByClassName("close")[0];
+const closeBtn = document.getElementsByClassName("close")[0]
 closeBtn.addEventListener('click', () => {
   modal.style.display = "none";
-});
+})
 
 
-// Effet d'animation
+// Effet d'animation sur les infos textuelles
 const ratio = .1
 const options = {
   root: null,
@@ -58,8 +58,8 @@ const options = {
   threshold: ratio
 }
 
-const handleIntersect = function (entries, observer) {
-  entries.forEach(function (entry) {
+const handleIntersect = (entries, observer) => {
+  entries.forEach(entry => {
     if (entry.intersectionRatio > ratio) {
       entry.target.classList.add('reveal-visible')
       observer.unobserve(entry.target)
@@ -69,6 +69,6 @@ const handleIntersect = function (entries, observer) {
 }
 
 const observer = new IntersectionObserver(handleIntersect, options);
-document.querySelectorAll('.reveal').forEach(function (r) {
+document.querySelectorAll('.reveal').forEach(r => {
   observer.observe(r)
 })
