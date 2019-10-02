@@ -1,23 +1,27 @@
 /* IMAGES DE LA CATEGORIE OBJECTS */
-.one .child1 {
-  background: url(img/object/bus-lautaro-andreani.jpg) center center / cover no-repeat;
+.portfolio-item {
+  background: center center / cover no-repeat;
 }
-.one .child2 {
-  background: url(img/object/carousel-chaussure-christian-rosswag.jpg) center center / cover no-repeat;
-}
-.one .child3 {
-  background: url(img/object/ryan-hafey-i5n6WHtvQ4c-unsplash.jpg) center center / cover no-repeat;
+/* .one .child1 {
+  background-image: url(img/object/bus-lautaro-andreani.jpg);
+} */
+/* .one .child2 {
+  background-image: url(img/object/carousel-chaussure-christian-rosswag.jpg);
+} */
+/* .one .child3 {
+  background-image: url(img/object/ryan-hafey-i5n6WHtvQ4c-unsplash.jpg);
 }
 .one .child4 {
-  background: url(img/object/shane-rounce-LSye26vpjaI-unsplash.jpg) center center / cover no-repeat;
+  background-image: url(img/object/shane-rounce-LSye26vpjaI-unsplash.jpg);
 }
 .one .child5 {
-  background: url(img/object/usine-france-damien-kuhn.jpg) center center / cover no-repeat;
+  background-image: url(img/object/usine-france-damien-kuhn.jpg);
 }
 .one .child6 {
-  background: url(img/object/kev-seto-Jv0TBnjzYNM-unsplash.jpg) center center / cover no-repeat;
-}
-.two .child1 {
+  background-image: url(img/object/kev-seto-Jv0TBnjzYNM-unsplash.jpg);
+} */
+
+/* .two .child1 {
   background: url(img/objects/hoshino.jpeg) center center / cover no-repeat;
 }
 .two .child2 {
@@ -34,7 +38,7 @@
 }
 .two .child6 {
   background: url(img/objects/romain_lohezic.jpeg) center center / cover no-repeat;
-}
+} */
 
 .portfolio-item {
   cursor: pointer;
@@ -50,33 +54,29 @@
   z-index: 2000;
   left: 0;
   top: 0;
-  padding-top: 70px;
   width: 100%;
+  padding: 20vh 0;
   height: 100vh;
-  overflow: auto; 
+  overflow: hidden; 
   background-color: rgb(0,0,0); 
   background-color: rgba(0,0,0,0.9);
 }
 
+/* Image container */
+.img-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform .5s, opacity .5s, z-index .5s;
+}
+
+
 /* Modal Content (Image) */
 .modal-content {
   display: block;
-  margin: 0 auto;
-  width: auto;
-  max-width: 80%;
-  height: 80vh;
-}
-
-/* Caption of Modal Image (Image Text) - Same Width as the Image */
-#caption {
-  margin: auto;
-  display: block;
   width: 100%;
-  max-width: 700px;
-  text-align: center;
-  color: #ccc;
-  padding: 10px 0;
   height: auto;
+  max-height: 80vh;
 }
 
 /* Add Animation - Zoom in the Modal */
@@ -93,8 +93,8 @@
 /* The Close Button */
 .close {
   position: absolute;
-  top: 60px;
-  right: 35px;
+  top: 30px;
+  right: 30px;
   color: #f1f1f1;
   font-size: 40px;
   font-weight: bold;
@@ -108,9 +108,55 @@
   cursor: pointer;
 }
 
-/* 100% Image Width on Smaller Screens */
-@media only screen and (min-width: 768px){
+/* Prev & next button */
+#modal_button--prev,
+#modal_button--next {
+  position: absolute;
+  top: calc(50% - 20vh);
+  width: 3rem;
+  height: 3rem;
+  /* transform: translateY(-50%); */
+  border-radius: 50%;
+  cursor: pointer; 
+  z-index: 2001; /* Sit on top of everything */
+  border: 1px solid #FFF;
+  margin: 0 20px;
+}
+#modal_button--prev {
+  left: 0;
+}
+#modal_button--next {
+  right: 0;
+}
+#modal_button--prev::after,
+#modal_button--next::after {
+  content: " ";
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  top: 50%;
+  left: 54%;
+  border-right: 2px solid #FFF;
+  border-bottom: 2px solid #FFF;
+  transform: translate(-50%, -50%) rotate(135deg);
+}
+#modal_button--next::after {
+  left: 47%;
+  transform: translate(-50%, -50%) rotate(-45deg);
+}
+@media screen and (min-width: 990px) {
   .modal-content {
-    width: 80%;
+    width: auto;
+    max-width: 80%;
+    height: 80vh;
+  }
+  #modal_button--prev, #modal_button--next {
+    top: 50%;
   }
 }
+
+/* @media screen and (min-width: 990px) {
+  .modal-content {
+    max-width: 90%;   
+  }
+} */

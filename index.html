@@ -18,7 +18,9 @@
     <!-- NAVBAR desktop -->
     <div class='menu-container'>
       <div class='menu'>
-        <div class='brand'><a href="index.html">Pixel HUB</a></div>
+        <div class='brand'>
+          <a href="index.html">Pixel HUB</a>
+        </div>
         <div class='links'>
           <div class='menu-right'><a href="landscapes.html">Landscapes</a></div>
           <div class='menu-right'><a href="alone.html">Alone</a></div>
@@ -26,8 +28,30 @@
           <div class='menu-right'><a href="architecture.html">Architecture</a></div>
           <div class='menu-right'><a href="index.html#contact">Contact</a></div>
         </div>
+        <div class="menu-auth">
+          <button id="logInModalBtn" class="btn-auth"><i class="fas fa-user"></i><span id="logInText" class="text-auth"> Log in</span></button>
+        </div>
       </div>
     </div>
+
+    <!-- Authentification Modal -->
+    <div id="logInModal" class="login-modal">
+      <div class="login-modal-content">
+        <div class="login-modal-title">
+          <h2>Log in</h2>
+          <span id="closeBtnModal" class="login-close-button">&times;</span>
+        </div>
+        <div id="logInModalBody" class="login-modal-body">
+          <input id="userFirstName" type="text" placeholder="Your Name">
+          <input id="userLastName" type="text" placeholder="Your Last Name" >
+          <input id="userMail" type="email" placeholder="Your Mail">
+        </div>
+        <div id="logInModalFooter" class="login-modal-footer">
+          <button id="logInBtn">Let's go!</button>
+        </div>
+      </div>
+    </div>
+  
 
     <!-- NAVBAR mobile -->
     <div id="menu" class="overlay">

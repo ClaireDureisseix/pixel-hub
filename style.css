@@ -22,6 +22,7 @@ body {
   font-family: 'Roboto', sans-serif;
   line-height: 1.5;
   font-family: 'Roboto', sans-serif;
+  background: #2c5364;
 
 }
 
@@ -75,21 +76,26 @@ body {
   padding: 20px 0;
   display: flex;
   justify-content: center;
+  align-content: center;
+  align-items: center;
   position: fixed;
   z-index: 200;
-  width: 100%;
+  width: 100vw;
 }
 
 .menu {
-  width: 900px;
+  width: 100vw;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  justify-content: flex-start;
+  flex-direction: row;
 }
 
 .links {
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
+  flex-direction: row;
+  align-content: center;
+  align-items: center;
 }
 
 .menu a,
@@ -124,7 +130,7 @@ body {
   font-family: 'Turret Road', cursive;
   font-size: 1.5rem;
   font-weight: 800;
-  padding-left: 20px;
+  padding: 0px 40px 0px 20px;
   white-space: nowrap;
 }
 
@@ -132,6 +138,28 @@ body {
   .menu-container .links {
     display: none;
   }
+
+  .text-auth{
+    display: none;
+  }
+}
+
+.text-auth{
+  padding-left: 10px;
+}
+
+.menu-auth{
+  align-self: center;
+  margin: 0 5vw 0 auto;
+}
+
+.btn-auth{
+  padding: 10px;
+  background: transparent;
+  color: white;
+  border: none;
+  font-weight: bold;
+  font-size: .8rem;
 }
 
 /* navbar mobile */
@@ -266,6 +294,7 @@ ul div li {
 /* slides start */
 .slides-container {
   position: relative;
+  padding-top: 4.9rem;
 }
 
 .slides-img {
@@ -277,6 +306,10 @@ ul div li {
 @media screen and (min-width: 766px) {
   .slides-img {
     height: 100vh;
+  }
+
+  .slides-container{
+    padding: 0;
   }
 }
 
@@ -306,6 +339,14 @@ ul div li {
 .about-container {
   height: max-content;
   padding: 30px 0;
+  opacity: 0;
+  transform: translateX(20px);
+  transition: 0.7s all ease-in;
+}
+
+.about-appear{
+  opacity: 1;
+  transform: translateX(0px);
 }
 
 .about-container>.about-text {
@@ -335,6 +376,9 @@ ul div li {
   align-items: center;
   padding: 30px;
   flex-wrap: wrap;
+  opacity: 0;
+  transform: translateX(-20px);
+  transition: 0.7s all ease-in;
 }
 
 .card {
@@ -346,6 +390,12 @@ ul div li {
   max-width: 365px;
   text-align: center;
   margin: 20px;
+  
+}
+
+.card-appear{
+  opacity: 1;
+  transform: translateX(0px);
 }
 
 .card>img {
@@ -897,4 +947,79 @@ footer a:hover {
     animation-duration: 0.5s;
     animation-name: opacity-items;
   }
+}
+
+/* MODALS */
+
+.login-modal {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  visibility: hidden;
+  transform: scale(1.1);
+  transition: visibility 0s linear 0.25s, opacity 0.25s 0s, transform 0.25s;
+}
+.login-modal-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 1rem 1.5rem;
+  width: 24rem;
+  border-radius: 3px;
+}
+.login-close-button {
+  width: 1.5rem;
+  line-height: 1.5rem;
+  text-align: center;
+  cursor: pointer;
+  margin-left: auto;
+}
+.login-close-button:hover {
+  opacity: .8;
+}
+.login-show-modal {
+  opacity: 1;
+  visibility: visible;
+  transform: scale(1.0);
+  transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
+  z-index: 1000;
+}
+
+.login-modal-title{
+  display: flex;
+  justify-content: flex-start;
+  border-bottom: solid 1px #c1c1c1;
+  align-items: center;
+}
+
+.login-modal-body{
+  padding: 30 0 20 0;
+  font-size: .9rem;
+  text-align: center;
+}
+
+.login-modal-body > input{
+  border: 1px solid #c1c1c1;
+  border-radius: 3px;
+  font-weight: normal;
+}
+
+
+.login-modal-footer{
+  text-align: center;
+}
+
+.login-modal-footer > button{
+  border: none;
+  border-radius: 3px;
+  padding: 15px;
+  text-transform: uppercase;
+  background: #2c5364;
+  color: white;
 }
