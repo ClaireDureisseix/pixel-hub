@@ -12,21 +12,6 @@ for (img of imgs) {
   });
 }
 
-// Get the image and insert it inside the modal - use its "alt" text as a caption
-const imgs = document.getElementsByClassName("portfolio-item");
-const modalImg = document.getElementById("img01");
-console.log(imgs);
-
-for (img of imgs) {
-  img.addEventListener('click', (e) => {
-    /*const aff = e.target.style.backgroundImage.value;
-    modal.style.display = "block";
-    modalImg.src = 'img/object/bus-lautaro-andreani.jpg';
-    modalImg.style.width = "auto";*/
-    //e.target.style.backgroundImage =;
-    //modalImg.background = url
-  });
-}
 // Closes the modal on click
 const closeBtn = document.getElementsByClassName("close")[0];
 closeBtn.addEventListener('click', () => {
@@ -34,9 +19,15 @@ closeBtn.addEventListener('click', () => {
 });
 
 // Carrousel in modal
-const next = document.getElementById('modal_button--next');
-const prev = document.getElementById('modal_button--prev');
+const next = document.getElementById('modal_button--next');
+const prev = document.getElementById('modal_button--prev');
 
+const mainPictures = document.querySelectorAll('div.portfolio-item');
+console.log(mainPictures.length);
+
+next.addEventListener('click', e => {
+  alert("hello");
+});
 
 // let i = 0;
 // for (img of imgs) {
