@@ -21,7 +21,7 @@
   background-image: url(img/object/kev-seto-Jv0TBnjzYNM-unsplash.jpg);
 } */
 
-.two .child1 {
+/* .two .child1 {
   background: url(img/objects/hoshino.jpeg) center center / cover no-repeat;
 }
 .two .child2 {
@@ -38,7 +38,7 @@
 }
 .two .child6 {
   background: url(img/objects/romain_lohezic.jpeg) center center / cover no-repeat;
-}
+} */
 
 .portfolio-item {
   cursor: pointer;
