@@ -1,11 +1,10 @@
-
-function form()                                    
+function alert()                                    
 { 
-    var fname = document.forms["RegForm"]["First Name"];                   
-    var lname = document.forms["RegForm"]["Last Name"];
-    var email = document.forms["RegForm"]["EMail"];  
-    var select =  document.forms["RegForm"]["Select Photograph"];  
-    var placeholder = document.forms["RegForm"]["Request"];    
+    var fname = document.forms["contact"]["First Name"];                   
+    var lname = document.forms["contact"]["Last Name"];
+    var email = document.forms["contact"]["EMail"];  
+    var select =  document.forms["contact"]["Select Photograph"];  
+    var placeholder = document.forms["contact"]["Request"];    
    
     if (fname.value == "")                                  
     { 
@@ -45,7 +44,7 @@ function form()
    
     if (select.selectedIndex < 1)                  
     { 
-        alert("Please enter your course."); 
+        alert("Please choose a photograph."); 
         select.focus(); 
         return false; 
     } 
@@ -58,5 +57,7 @@ function form()
       return false;
     }
 
-    return true; 
+    return true;
 } 
+
+module.exports = 'form.html';
