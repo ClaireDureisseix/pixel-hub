@@ -48,3 +48,27 @@ const closeBtn = document.getElementsByClassName("close")[0];
 closeBtn.addEventListener('click', () => {
   modal.style.display = "none";
 });
+
+
+// Effet d'animation
+const ratio = .1
+const options = {
+  root: null,
+  rootMargin: '0px',
+  threshold: ratio
+}
+
+const handleIntersect = function (entries, observer) {
+  entries.forEach(function (entry) {
+    if (entry.intersectionRatio > ratio) {
+      entry.target.classList.add('reveal-visible')
+      observer.unobserve(entry.target)
+    }
+    console.log(entry.intersectRatio)
+  })
+}
+
+const observer = new IntersectionObserver(handleIntersect, options);
+document.querySelectorAll('.reveal').forEach(function (r) {
+  observer.observe(r)
+})

@@ -1,4 +1,4 @@
-/* IMAGES DE LA CATEGORIE OBJECTS */
+/* IMAGES DES GALLERIES */
 .portfolio-item {
   background: center center / cover no-repeat;
 }
@@ -28,8 +28,9 @@
 
 /* Image container */
 .img-container {
+  width: 100%;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   transition: transform .5s, opacity .5s, z-index .5s;
 }
@@ -43,7 +44,7 @@
 }
 
 /* Add Animation - Zoom in the Modal */
-.modal-content, #caption {
+.modal-content {
   animation-name: zoom;
   animation-duration: 0.6s;
 }
@@ -99,6 +100,16 @@
   left: 47%;
   transform: translate(-50%, -50%) rotate(-45deg);
 }
+.reveal {
+  opacity: 0;
+  transform: translateY(-30px);
+}
+.reveal-visible {
+  opacity: 1;
+  transform: translateY(0);
+  transition: 1s cubic-bezier(.5, 0, 0, 1);
+}
+
 @media screen and (min-width: 990px) {
   .modal-content {
     width: auto;
