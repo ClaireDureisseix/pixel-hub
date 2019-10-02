@@ -23,6 +23,7 @@ body {
   line-height: 1.5;
   font-family: "Roboto", sans-serif;
   background: #2c5364;
+  overflow-x: hidden;
 }
 
 .bg-main {
@@ -1002,4 +1003,37 @@ footer a:hover {
   text-transform: uppercase;
   background: #2c5364;
   color: white;
+}
+
+/* Toaster for authentification */
+
+.toast {
+  visibility: hidden;
+  min-width: 250px;
+  margin-left: -125px;
+  background-color: #333;
+  color: #fff;
+  font-size: 18px;
+  text-align: center;
+  border-radius: 2px;
+  padding: 16px;
+  position: fixed;
+  z-index: 1;
+  right: 30px;
+  top: 150px;
+}
+
+.toast.show{
+  visibility: visible;
+  animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+
+@keyframes fadein {
+  from {top: 0; opacity: 0;}
+  to {top: 150px; opacity: 1;}
+}
+
+@keyframes fadeout {
+  from {top: 150px; opacity: 1;}
+  to {top: 0; opacity: 0;}
 }

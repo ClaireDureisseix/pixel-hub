@@ -72,10 +72,16 @@ const userFirstName = document.getElementById("userFirstName");
 const userLastName = document.getElementById("userLastName");
 const userMail = document.getElementById("userMail");
 const logInBtn = document.getElementById("logInBtn");
+const toast = document.getElementById("toast");
 
 const toggleLogInModal = () => {
   logInModal.classList.toggle("login-show-modal");
 };
+
+const showToast = () =>{
+  toast.classList.add("show");
+  setTimeout(function(){ toast.className = toast.className.replace("show", ""); }, 3000);
+}
 
 const logInSucceed = () => {
   let name = userFirstName.value;
@@ -83,6 +89,7 @@ const logInSucceed = () => {
   let mail = userMail.value;
   if (name.length > 0 && mail.length > 0 && lastName.length > 0) {
     toggleLogInModal();
+    showToast();
     logInText.innerHTML = ` ${name}`;
     userFirstName.value = "";
     userLastName.value = "";
