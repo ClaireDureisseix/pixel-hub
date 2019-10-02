@@ -1,37 +1,131 @@
-/* IMAGES DE LA CATEGORIE OBJECTS */
-.one .child1 {
-  background: url(img/object/bus-lautaro-andreani.jpg) center center / cover no-repeat;
+/* IMAGES DES GALLERIES */
+.portfolio-item {
+  background: center center / cover no-repeat;
 }
-.one .child2 {
-  background: url(img/object/carousel-chaussure-christian-rosswag.jpg) center center / cover no-repeat;
+
+
+.portfolio-item {
+  cursor: pointer;
+  transition: 0.3s;
 }
-.one .child3 {
-  background: url(img/object/ryan-hafey-i5n6WHtvQ4c-unsplash.jpg) center center / cover no-repeat;
+
+.portfolio-item:hover {opacity: 0.7;}
+
+/* The Modal (background) */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 2000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  padding: 10vh 0;
+  height: 100vh;
+  overflow: hidden; 
+  background-color: rgb(0,0,0); 
+  background-color: rgba(0,0,0,0.9);
 }
-.one .child4 {
-  background: url(img/object/shane-rounce-LSye26vpjaI-unsplash.jpg) center center / cover no-repeat;
+
+/* Image container */
+.img-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: transform .5s, opacity .5s, z-index .5s;
 }
-.one .child5 {
-  background: url(img/object/usine-france-damien-kuhn.jpg) center center / cover no-repeat;
+
+/* Modal Content (Image) */
+.modal-content {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-height: 80vh;
 }
-.one .child6 {
-  background: url(img/object/kev-seto-Jv0TBnjzYNM-unsplash.jpg) center center / cover no-repeat;
+
+/* Add Animation - Zoom in the Modal */
+.modal-content {
+  animation-name: zoom;
+  animation-duration: 0.6s;
 }
-.two .child1 {
-  background: url(img/objects/hoshino.jpeg) center center / cover no-repeat;
+
+@keyframes zoom {
+  from {transform:scale(0)}
+  to {transform:scale(1)}
 }
-.two .child2 {
-  background: url(img/objects/shane\ rounce.jpeg) center center / cover no-repeat;
+
+/* The Close Button */
+.close {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
 }
-.two .child3 {
-  background: url(img/objects/taton_moise.jpeg) center center / cover no-repeat;
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
 }
-.two .child4 {
-  background: url(img/objects/nathan_wright.jpeg) center center / cover no-repeat;
+
+/* Prev & next button */
+#modal_button--prev,
+#modal_button--next {
+  width: 2rem;
+  height: 2rem;
+  transform: translateY(-50%);
+  border-radius: 50%;
+  cursor: pointer; 
+  z-index: 2001; /* Sit on top of everything */
+  border: 1px solid #FFF;
+  margin: 0 10px;
 }
-.two .child5 {
-  background: url(img/objects/taton_moise2.jpeg) center center / cover no-repeat;
+#modal_button--prev::after,
+#modal_button--next::after {
+  content: " ";
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  top: 50%;
+  left: 54%;
+  border-right: 2px solid #FFF;
+  border-bottom: 2px solid #FFF;
+  transform: translate(-50%, -50%) rotate(135deg);
 }
-.two .child6 {
-  background: url(img/objects/romain_lohezic.jpeg) center center / cover no-repeat;
+#modal_button--next::after {
+  left: 47%;
+  transform: translate(-50%, -50%) rotate(-45deg);
 }
+.reveal {
+  opacity: 0;
+  transform: translateY(-30px);
+}
+.reveal-visible {
+  opacity: 1;
+  transform: translateY(0);
+  transition: 1s cubic-bezier(.5, 0, 0, 1);
+}
+
+@media screen and (min-width: 990px) {
+  .modal-content {
+    width: auto;
+    max-width: 80%;
+    height: 80vh;
+  }
+  #modal_button--prev, 
+  #modal_button--next {
+    width: 3rem;
+    height: 3rem;
+    margin: 0 50px;
+  }
+}
+
+/* @media screen and (min-width: 990px) {
+  .modal-content {
+    max-width: 90%;   
+  }
+} */
