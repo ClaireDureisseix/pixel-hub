@@ -41,7 +41,8 @@
 /* Modal Content (Image) */
 .modal-content {
   display: block;
-  width: 100%;
+  width: auto;
+  max-width: 90%;
   height: auto;
   max-height: 80vh;
 }
