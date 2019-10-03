@@ -28,6 +28,7 @@
 /* Image container */
 .img-container {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   transition: transform .5s, opacity .5s, z-index .5s;
@@ -35,7 +36,8 @@
 
 /* Modal Content (Image) */
 .modal-content {
-  display: block;
+  display: flex;
+  flex-direction: column;
   width: 100%;
   height: auto;
   max-height: 80vh;
@@ -98,6 +100,21 @@
   left: 47%;
   transform: translate(-50%, -50%) rotate(-45deg);
 }
+.film-container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 100px;
+  z-index: 5000;
+  background-color: gray;
+}
+
+.film-item {
+  width: 20%;
+  height: 100%; 
+  background-color: white;
+}
+
 @media screen and (min-width: 990px) {
   .modal-content {
     width: auto;

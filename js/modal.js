@@ -37,7 +37,7 @@ const modalCarousel = portfolioChilds => {
         }
         modalImg.src = url;
       })
-    })
+    });
   }
 }
 modalCarousel(portfolioChilds1)
