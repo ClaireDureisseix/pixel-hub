@@ -40,26 +40,6 @@ function showSlides() {
   slides[slideIndex - 1].style.display = "block";
   setTimeout(showSlides, 3000);
 }
-// manual carousel
-
-/*automatic carousel ok
-
-let slideIndex = 0;
-showSlides();
-
-function showSlides(){
-  const slides = document.querySelectorAll(".slides");
-  for (let i = 0; i < slides.length; i++){
-    slides[i].style.display = "none";
-  }
-  slideIndex++;
-  if (slideIndex > slides.length){
-    slideIndex = 1
-  }
-  slides[slideIndex - 1].style.display = "block";
-  setTimeout(showSlides, 3000);
-}
-*/
 
 //  Authentification
 const logInModalBtn = document.getElementById("logInModalBtn");
@@ -72,10 +52,16 @@ const userFirstName = document.getElementById("userFirstName");
 const userLastName = document.getElementById("userLastName");
 const userMail = document.getElementById("userMail");
 const logInBtn = document.getElementById("logInBtn");
+const toast = document.getElementById("toast");
 
 const toggleLogInModal = () => {
   logInModal.classList.toggle("login-show-modal");
 };
+
+const showToast = () =>{
+  toast.classList.add("show");
+  setTimeout(function(){ toast.className = toast.className.replace("show", ""); }, 3000);
+}
 
 const logInSucceed = () => {
   let name = userFirstName.value;
@@ -83,6 +69,7 @@ const logInSucceed = () => {
   let mail = userMail.value;
   if (name.length > 0 && mail.length > 0 && lastName.length > 0) {
     toggleLogInModal();
+    showToast();
     logInText.innerHTML = ` ${name}`;
     userFirstName.value = "";
     userLastName.value = "";
@@ -119,7 +106,10 @@ scrollConceptAppear = () => {
 
 window.addEventListener("scroll", scrollConceptAppear);
 window.addEventListener("scroll", scrollCardsAppear);
+window.addEventListener("scroll", scrollCardsAppear);
 
+
+// top button
 window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {

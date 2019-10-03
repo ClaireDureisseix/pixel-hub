@@ -23,6 +23,7 @@ body {
   line-height: 1.5;
   font-family: "Roboto", sans-serif;
   background: #2c5364;
+  overflow-x: hidden;
 }
 
 .bg-main {
@@ -591,6 +592,10 @@ footer a:hover {
 
 .one {
   padding-top: 80px;
+  background: url(https://wallup.net/wp-content/uploads/2018/09/26/240095-shades.jpg) center center / cover no-repeat fixed;
+}
+.two {
+  background: url(https://images.unsplash.com/photo-1569075319321-f73e651c2c7a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=900&q=60) center center / cover no-repeat fixed;
 }
 
 .portfolio {
@@ -1004,6 +1009,40 @@ footer a:hover {
   color: white;
 }
 
+
+/* Toaster for authentification */
+
+.toast {
+  visibility: hidden;
+  min-width: 250px;
+  margin-left: -125px;
+  background-color: #333;
+  color: #fff;
+  font-size: 18px;
+  text-align: center;
+  border-radius: 2px;
+  padding: 16px;
+  position: fixed;
+  z-index: 1;
+  right: 30px;
+  top: 150px;
+}
+
+.toast.show{
+  visibility: visible;
+  animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+
+@keyframes fadein {
+  from {top: 0; opacity: 0;}
+  to {top: 150px; opacity: 1;}
+}
+
+@keyframes fadeout {
+  from {top: 150px; opacity: 1;}
+  to {top: 0; opacity: 0;}
+}
+
 #myBtn {
   display: none;
   position: fixed; 
@@ -1018,5 +1057,5 @@ footer a:hover {
   padding: 15px; 
   border-radius: 10px; 
 	font-size: 18px;
-	font-family: "Roboto", sans-serif;
+  font-family: "Roboto", sans-serif;
 }
