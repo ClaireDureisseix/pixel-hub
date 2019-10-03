@@ -2,7 +2,7 @@ document.getElementById('form');
 
 function alert()                                   
 { 
-    object.onclick = function() {btn2};
+    window.onclick = function() {btn2};
     var fname = document.forms["contact"]["First Name"];                   
     var lname = document.forms["contact"]["Last Name"];
     var email = document.forms["contact"]["EMail"];  
