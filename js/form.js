@@ -1,11 +1,14 @@
-function alert()                                    
+document.getElementById('form');
+
+function alert()                                   
 { 
+    object.onclick = function() {btn2};
     var fname = document.forms["contact"]["First Name"];                   
     var lname = document.forms["contact"]["Last Name"];
     var email = document.forms["contact"]["EMail"];  
     var select =  document.forms["contact"]["Select Photograph"];  
     var placeholder = document.forms["contact"]["Request"];    
-   
+
     if (fname.value == "")                                  
     { 
         window.alert("Please enter your name."); 
@@ -58,6 +61,6 @@ function alert()
     }
 
     return true;
-} 
 
-module.exports = 'form.html';
+    
+} 

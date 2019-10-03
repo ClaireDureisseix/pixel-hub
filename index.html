@@ -195,22 +195,23 @@
   <section id="contact" class="bg-secondary">
     <h2><i class="fas fa-envelope-square"></i> CONTACT US</h2>
 
-    <form>
+    <form id="form">
+        
+
       <label>
         <div class="contact">First Name</div>
       </label>
-      <input type="text" id="fname" name="firstname" placeholder="ex: John" required>
+      <input type="text" id="fname" name="firstname" placeholder="ex: John">
 
       <label>
         <div class="contact">Last Name</div>
       </label>
-      <input type="text" id="lname" name="lastname" placeholder="ex: Doe" required>
+      <input type="text" id="lname" name="lastname" placeholder="ex: Doe">
 
       <label>
         <div class="contact">Email</div>
       </label>
-      <input type="text" id="email" name="email" placeholder="ex: j.doe@doe.com"
-        pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" title="Your email adress is invalid" required>
+      <input type="text" id="email" name="email" placeholder="ex: j.doe@doe.com">
 
       <label>
         <div class="contact">The photograph</div>
@@ -227,7 +228,7 @@
       <label>
         <div class="contact">Your Request</div>
       </label>
-      <textarea placeholder="ex: I want to learn..." required></textarea>
+      <textarea placeholder="ex: I want to learn..."></textarea>
 
       <input type="submit" data-disabled="true" value="Send" class="btn2" />
 
@@ -252,9 +253,14 @@
   </footer>
 
   <!--FOOTER END-->
+  <button onclick="topFunction()" id="myBtn" title="Go to top">
+    <i class="fas fa-arrow-circle-up"></i>
+  </button>
 
+
+  
   <script src="js/index.js"></script>
-  <script src="js/form.js"></script>
+  <script src="..\js\form.js"></script>
 </body>
 
 </html>
