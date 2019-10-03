@@ -42,7 +42,7 @@
 .modal-content {
   display: block;
   width: auto;
-  max-width: 90%;
+  max-width: 85%;
   height: auto;
   max-height: 80vh;
 }
@@ -86,7 +86,6 @@
   cursor: pointer; 
   z-index: 2001; /* Sit on top of everything */
   border: 1px solid #FFF;
-  margin: 0 10px;
 }
 #modal_button--prev::after,
 #modal_button--next::after {
@@ -114,16 +113,14 @@
   transition: 2s cubic-bezier(.5, 0, 0, 1);
 }
 
-@media screen and (min-width: 990px) {
+@media screen and (min-width: 890px) {
   .modal-content {
-    width: auto;
     max-width: 80%;
-    height: 80vh;
   }
   #modal_button--prev, 
   #modal_button--next {
     width: 3rem;
     height: 3rem;
-    margin: 0 50px;
+    margin: 0 30px;
   }
 }
