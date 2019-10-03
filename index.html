@@ -197,7 +197,7 @@
   <section id="contact" class="bg-secondary">
     <h2><i class="fas fa-envelope-square"></i> CONTACT US</h2>
 
-    <form id="form">
+    <form id="form" name="Form">
         
 
       <label>
@@ -218,7 +218,7 @@
       <label>
         <div class="contact">The photograph</div>
       </label>
-      <select id="select">
+      <select id="select" name="select">
         <option value="" disabled selected hidden>Choose the photograph you want to learn with</option>
         <option value="1">Natalya Letunova</option>
         <option value="2">Mael Balland</option>
@@ -230,9 +230,11 @@
       <label>
         <div class="contact">Your Request</div>
       </label>
-      <textarea placeholder="ex: I want to learn..."></textarea>
+      <textarea placeholder="ex: I want to learn..." name="textarea"></textarea>
 
-      <input type="submit" data-disabled="true" value="Send" class="btn2" />
+      <button method="post" onclick="validateForm()" id="toto" class="btn2">
+        Send
+      </button>
 
     </form>
   </section>
@@ -262,7 +264,7 @@
 
   
   <script src="js/index.js"></script>
-  <script src="..\js\form.js"></script>
+  <script src="js/form.js"></script>
 </body>
 
 </html>
