@@ -1,0 +1,54 @@
+/* IMAGES DE LA CATEGORIE ALONE */
+.one .child1 {
+  background: url(img/alone/riccardo-pelati-c-w3oVifZOw-unsplash.jpg) center center / cover no-repeat;
+}
+.one .child2 {
+  background: url(img/alone/carousel-scene-christoph-peich.jpg) center center / cover no-repeat;
+}
+.one .child3 {
+  background: url(img/alone/christopher-windus-Swfc6shtGP4-unsplash.jpg) center center / cover no-repeat;
+}
+.one .child4 {
+  background: url(img/alone/denys_nevozhai2.jpeg.jpeg) center center / cover no-repeat;
+}
+.one .child5 {
+  background: url(img/alone/duong_tran_quoc.jpeg) center center / cover no-repeat;
+}
+.one .child6 {
+  background: url(img/alone/julian-santa-ana-R6YZhThU-NU-unsplash.jpg) center center / cover no-repeat;
+}
+.two .child1 {
+  background: url(img/alone/natalya-letunova.jpg) center center / cover no-repeat;
+}
+.two .child2 {
+  background: url(img/alone/brennan-martinez-GrG-WMQBDc4-unsplash.jpg) center center / cover no-repeat;
+}
+.two .child3 {
+  background: url(img/alone/molly-belle-a-xEUwYSPLw-unsplash.jpg) center center / cover no-repeat;
+}
+.two .child4 {
+  background: url(img/alone/paul_grilmore.jpeg) center center / cover no-repeat;
+}
+.two .child5 {
+  background: url(img/alone/riccardo-fissore-L0mNDnusJE4-unsplash.jpg) center center / cover no-repeat;
+}
+.two .child6 {
+  background: url(img/alone/glenn-carstens-peters-F-u9hLx19uY-unsplash.jpg) center center / cover no-repeat;
+}
+
+#myBtn {
+  display: none;
+  position: fixed; 
+  bottom: 20px; 
+  left: 30px; 
+  z-index: 99;
+  border: none; 
+  outline: none; 
+  background-color: rgba(0, 0, 0, 0.4); 
+  color: white; 
+  cursor: pointer; 
+  padding: 15px; 
+  border-radius: 10px; 
+	font-size: 18px;
+	font-family: "Roboto", sans-serif;
+}
