@@ -849,6 +849,11 @@ footer a:hover {
     overflow: hidden;
   }
 
+  .portfolio-item:hover {
+    
+    cursor: pointer;
+  }
+
   .portfolio img {
     display: none;
   }
@@ -1038,6 +1043,8 @@ footer a:hover {
 
 .login-modal {
   position: fixed;
+  flex-direction: column;
+  align-content: center;
   left: 0;
   top: 0;
   width: 100%;
@@ -1061,11 +1068,8 @@ footer a:hover {
 }
 
 .login-close-button {
-  width: 1.5rem;
-  line-height: 1.5rem;
-  text-align: center;
-  cursor: pointer;
-  margin-left: auto;
+  width: 100%;
+  justify-content: flex-end;
 }
 
 .login-close-button:hover {
