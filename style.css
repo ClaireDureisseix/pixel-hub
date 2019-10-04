@@ -288,7 +288,7 @@ ul div li {
 .carousel {
   position: relative;
   width: 100%;
-  height: 100vh;
+  height: 33vh;
 }
 
 .track_wrapper {
@@ -386,9 +386,14 @@ ul div li {
   width: 100%;
   object-fit: cover;
   touch-action: pan-x;
-}
+} */
 
 @media screen and (min-width: 766px) {
+
+  .carousel {
+    height: 100vh;
+  }
+
   .slides-img {
     height: 100vh;
   }
@@ -414,6 +419,7 @@ ul div li {
     height: 100vh;
   }
 }
+
 end first-one */
 /* CONCEPT */
 
