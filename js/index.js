@@ -9,7 +9,7 @@ const closeMenu = () => {
 
 // Hide and show on click button MENU mobile
 
-const showOffButton = document.getElementById("contactBtnJs"); 
+const showOffButton = document.getElementById("contactBtnJs");
 const toggleShowOffButton = () => {
   showOffButton.style.display = "none";
 };
@@ -23,23 +23,86 @@ function showOnButton() {
 
 // ci-dessous carousel
 
-// automatic carousel + dots
-let slideIndex = 0;
-showSlides();
+const track = document.querySelector(".track_container");
+const slides = Array.from(track.children);
+const leftButton = document.querySelector(".button-left");
+const rightButton = document.querySelector(".button-right");
+const nav = document.querySelector(".carousel_nav");
+const dots = Array.from(nav.children);
 
-function showSlides() {
-  const slides = document.querySelectorAll(".slides");
-  for (let i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
-  }
-  slideIndex++;
-  if (slideIndex > slides.length) {
-    slideIndex = 1;
-  }
 
-  slides[slideIndex - 1].style.display = "block";
-  setTimeout(showSlides, 3000);
+const amountToMove = slides[0].getBoundingClientRect().width;
+
+
+slides.forEach((item, index) => {
+  item.style.left = amountToMove * index + "px";
+})
+
+const moveClass = (track, currentSlide, targetSlide) => {
+  track.style.transform = "translateX(-" + targetSlide.style.left + ")";
+  currentSlide.classList.remove("current-slide");
+  targetSlide.classList.add("current-slide");
 }
+
+const updateDots = (currentDot, targetDot) => {
+  currentDot.classList.remove("current-slide");
+  targetDot.classList.add("current-slide");
+}
+
+rightButton.addEventListener("click", () => {
+  const currentSlide = track.querySelector(".current-slide");
+  const nextSlide = currentSlide.nextElementSibling;
+  const currentDot = nav.querySelector(".current-slide");
+  const nextDot = currentDot.nextElementSibling;
+  moveClass(track, currentSlide, nextSlide);
+  updateDots(currentDot, nextDot)
+
+
+})
+
+leftButton.addEventListener("click", () => {
+  const currentSlide = track.querySelector(".current-slide");
+  const prevSlide = currentSlide.previousElementSibling;
+  const currentDot = nav.querySelector(".current-slide");
+  const prevDot = currentDot.previousElementSibling;
+  moveClass(track, currentSlide, prevSlide);
+  updateDots(currentDot, prevDot)
+})
+
+nav.addEventListener("click", e => {
+
+  const targetDot = e.target.closest("button");
+
+  if (!targetDot) return
+
+  const currentDot = nav.querySelector(".current-slide");
+  const currentSlide = track.querySelector(".current-slide");
+  const dotIndex = dots.findIndex(dot => dot === targetDot);
+  const jambon = slides[dotIndex];
+
+  moveClass(track, currentSlide, jambon);
+
+  updateDots(currentDot, targetDot);
+})
+
+// // first-one
+// let slideIndex = 0;
+// showSlides();
+
+// function showSlides() {
+//   const slides = document.querySelectorAll(".slides");
+//   for (let i = 0; i < slides.length; i++) {
+//     slides[i].style.display = "none";
+//   }
+//   slideIndex++;
+//   if (slideIndex > slides.length) {
+//     slideIndex = 1;
+//   }
+
+//   slides[slideIndex - 1].style.display = "block";
+//   setTimeout(showSlides, 3000);
+// }
+// // first-one
 
 //  Authentification
 const logInModalBtn = document.getElementById("logInModalBtn");
@@ -58,9 +121,11 @@ const toggleLogInModal = () => {
   logInModal.classList.toggle("login-show-modal");
 };
 
-const showToast = () =>{
+const showToast = () => {
   toast.classList.add("show");
-  setTimeout(function(){ toast.className = toast.className.replace("show", ""); }, 3000);
+  setTimeout(function () {
+    toast.className = toast.className.replace("show", "");
+  }, 3000);
 }
 
 const logInSucceed = () => {
