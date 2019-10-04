@@ -37,6 +37,8 @@ function validateForm() {
         return false;
     
     } else {
-        alert('Thank you! You\'ll be contacted soon!')
+        alert('Thank you! We\'ll contact you soon!')
+        return true;
     }
+
 }
