@@ -14,9 +14,7 @@ const modalCarousel = portfolioChilds => {
   for(let i = 0; i < portfolioChilds.length; i++){
     portfolioChilds[i].addEventListener('click', () =>{
       let url = this.event.target.style.backgroundImage.split('"')[1]
-      modal.style.display = "flex"
-      modal.style.justifyContent = "center"
-      modal.style.alignItems = "center"
+      modal.style.display = "block"
       modalImg.src = url
       //modalImg.style.width = "auto";
       next.addEventListener('click', () =>{
