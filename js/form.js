@@ -35,5 +35,10 @@ function validateForm() {
     } else if (textarea == null || textarea == "") {
         alert('Leave us your comment!');
         return false;
+    
+    } else {
+        alert('Thank you! We\'ll contact you soon!')
+        return true;
     }
+
 }
