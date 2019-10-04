@@ -1041,10 +1041,10 @@ footer a:hover {
 
 /* MODALS */
 
+/* MODALS */
+
 .login-modal {
   position: fixed;
-  flex-direction: column;
-  align-content: center;
   left: 0;
   top: 0;
   width: 100%;
@@ -1055,7 +1055,6 @@ footer a:hover {
   transform: scale(1.1);
   transition: visibility 0s linear 0.25s, opacity 0.25s 0s, transform 0.25s;
 }
-
 .login-modal-content {
   position: absolute;
   top: 50%;
@@ -1066,48 +1065,49 @@ footer a:hover {
   width: 24rem;
   border-radius: 3px;
 }
-
 .login-close-button {
-  width: 100%;
-  justify-content: flex-end;
+  width: 1.5rem;
+  line-height: 1.5rem;
+  text-align: center;
+  cursor: pointer;
+  margin-left: auto;
 }
-
 .login-close-button:hover {
-  opacity: 0.8;
+  opacity: .8;
 }
-
 .login-show-modal {
   opacity: 1;
   visibility: visible;
-  transform: scale(1);
+  transform: scale(1.0);
   transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
   z-index: 1000;
 }
 
-.login-modal-title {
+.login-modal-title{
   display: flex;
   justify-content: flex-start;
   border-bottom: solid 1px #c1c1c1;
   align-items: center;
 }
 
-.login-modal-body {
+.login-modal-body{
   padding: 30 0 20 0;
-  font-size: 0.9rem;
+  font-size: .9rem;
   text-align: center;
 }
 
-.login-modal-body > input {
+.login-modal-body > input{
   border: 1px solid #c1c1c1;
   border-radius: 3px;
   font-weight: normal;
 }
 
-.login-modal-footer {
+
+.login-modal-footer{
   text-align: center;
 }
 
-.login-modal-footer > button {
+.login-modal-footer > button{
   border: none;
   border-radius: 3px;
   padding: 15px;
