@@ -106,7 +106,7 @@ logInBtn.addEventListener('click', logInSucceed)
 closeBtnModal.addEventListener('click', toggleLogInModal)
 
 // Cards appearing effect + concept appearing effect
-const screenPosition = window.innerHeight / 2;
+const screenPosition = window.innerHeight / 1.5;
 
 scrollCardsAppear = () => {
   const cardPartners = document.querySelector(".card-container");
@@ -119,7 +119,7 @@ scrollCardsAppear = () => {
 scrollConceptAppear = () => {
   const conceptBlock = document.querySelector(".about-container");
   const conceptPosition = conceptBlock.getBoundingClientRect().top;
-  if (conceptPosition < screenPosition) {
+  if (conceptPosition < screenPosition && window.innerWidth > 768) {
     conceptBlock.classList.add("about-appear");
   }
 };
