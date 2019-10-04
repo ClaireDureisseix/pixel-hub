@@ -208,43 +208,44 @@
   <section id="contact" class="bg-secondary">
     <h2><i class="fas fa-envelope-square"></i> CONTACT US</h2>
 
-    <form>
+    <form id="form" name="Form">
+        
+
       <label>
         <div class="contact">First Name</div>
       </label>
-      <input type="text" id="fname" name="firstname" placeholder="ex: John" required>
+      <input type="text" id="fname" name="firstname" placeholder="ex: John">
 
       <label>
         <div class="contact">Last Name</div>
       </label>
-      <input type="text" id="lname" name="lastname" placeholder="ex: Doe" required>
+      <input type="text" id="lname" name="lastname" placeholder="ex: Doe">
 
       <label>
         <div class="contact">Email</div>
       </label>
-      <input type="text" id="email" name="email" placeholder="ex: j.doe@doe.com"
-        pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" title="Your email adress is invalid" required>
+      <input type="text" id="email" name="email" placeholder="ex: j.doe@doe.com">
 
       <label>
         <div class="contact">The photograph</div>
       </label>
-      <select id="select">
+      <select id="select" name="select">
         <option value="" disabled selected hidden>Choose the photograph you want to learn with</option>
         <option value="1">Natalya Letunova</option>
         <option value="2">Mael Balland</option>
         <option value="3">Patrick Hendry</option>
         <option value="4">Pablo Garcia</option>
+        <option value="5">I'm here for something else</option>
       </select>
 
       <label>
         <div class="contact">Your Request</div>
       </label>
-      <textarea placeholder="ex: I want to learn..." required></textarea>
+      <textarea placeholder="ex: I want to learn..." name="textarea"></textarea>
 
       <button method="post" onclick="validateForm()" id="toto" class="btn2">
         Send
       </button>
-
 
     </form>
   </section>
@@ -267,12 +268,15 @@
   </footer>
 
   <!--FOOTER END-->
+
   <button onclick="topFunction()" id="myBtn" title="Go to top">
     <i class="fas fa-arrow-circle-up"></i>
   </button>
 
+
   <script src="js/index.js"></script>
   <script src="js/form.js"></script>
+
 
 </body>
 
