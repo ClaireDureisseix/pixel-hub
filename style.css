@@ -386,6 +386,11 @@ ul div li {
 } */
 
 @media screen and (min-width: 766px) {
+
+  .carousel {
+    height: 100vh;
+  }
+
   .slides-img {
     height: 100vh;
   }
@@ -411,6 +416,7 @@ ul div li {
     height: 100vh;
   }
 }
+
 end first-one */
 /* CONCEPT */
 
