@@ -4,6 +4,7 @@
 *,
 *::before,
 *::after {
+  scroll-behavior: smooth;
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -38,8 +39,8 @@ body {
   background: #0f2027;
 }
 
-.bg-main>h2,
-.bg-secondary>h2 {
+.bg-main > h2,
+.bg-secondary > h2 {
   color: white;
   padding: 20px;
   text-align: center;
@@ -48,9 +49,8 @@ body {
 }
 
 @media screen and (min-width: 768px) {
-
-  .bg-main>h2,
-  .bg-secondary>h2 {
+  .bg-main > h2,
+  .bg-secondary > h2 {
     width: 25%;
     min-width: 33%;
     text-align: left;
@@ -294,7 +294,6 @@ ul div li {
 .track_wrapper {
   position: relative;
   height: 100%;
-
 }
 
 .track_container {
@@ -375,7 +374,6 @@ ul div li {
   margin: 20px 0;
 }
 
-
 /* start first-one
 .slides-container {
   position: relative;
@@ -389,7 +387,6 @@ ul div li {
 } */
 
 @media screen and (min-width: 766px) {
-
   .carousel {
     height: 100vh;
   }
@@ -429,7 +426,7 @@ end first-one */
   opacity: 1;
 }
 
-.about-container>.about-text {
+.about-container > .about-text {
   font-size: 1rem;
   color: white;
   text-align: justify;
@@ -448,7 +445,7 @@ end first-one */
     transition: 0.7s all ease-in;
   }
 
-  .about-container>.about-text {
+  .about-container > .about-text {
     font-size: 0.875rem;
   }
 
@@ -483,7 +480,6 @@ end first-one */
   max-width: 365px;
   text-align: center;
   margin: 20px;
-
 }
 
 .card-appear {
@@ -491,7 +487,7 @@ end first-one */
   transform: translateX(0px);
 }
 
-.card>img {
+.card > img {
   position: relative;
 }
 
@@ -508,12 +504,12 @@ end first-one */
   padding: 25px;
 }
 
-.card-item>p {
+.card-item > p {
   font-size: 14px;
   word-wrap: break-word;
 }
 
-.card-item>h4 {
+.card-item > h4 {
   font-size: 18px;
 }
 
@@ -534,7 +530,7 @@ end first-one */
     padding: 50px 10px;
   }
 
-  .card>img {
+  .card > img {
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
   }
@@ -551,7 +547,7 @@ end first-one */
     transition: opacity 0.2s, visibility 0.2s;
   }
 
-  .card:hover>img {
+  .card:hover > img {
     opacity: 0.1;
     transition: 0.5s ease-in;
   }
@@ -609,12 +605,11 @@ textarea {
 }
 
 .btn2:hover {
-  opacity: .8;
+  opacity: 0.8;
   background-color: aliceblue;
 }
 
 @media screen and (min-width: 768px) {
-
   input[type="text"],
   input[type="email"],
   select,
@@ -697,11 +692,13 @@ footer a:hover {
 
 .one {
   padding-top: 80px;
-  background: url(https://wallup.net/wp-content/uploads/2018/09/26/240095-shades.jpg) center center / cover no-repeat fixed;
+  background: url(https://wallup.net/wp-content/uploads/2018/09/26/240095-shades.jpg)
+    center center / cover no-repeat fixed;
 }
 
 .two {
-  background: url(https://images.unsplash.com/photo-1569075319321-f73e651c2c7a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=900&q=60) center center / cover no-repeat fixed;
+  background: url(https://images.unsplash.com/photo-1569075319321-f73e651c2c7a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=900&q=60)
+    center center / cover no-repeat fixed;
 }
 
 .portfolio {
@@ -837,7 +834,6 @@ footer a:hover {
 }
 
 @media screen and (min-width: 768px) {
-
   body,
   html {
     margin: 0;
@@ -851,6 +847,11 @@ footer a:hover {
   .portfolio-item {
     background-color: white;
     overflow: hidden;
+  }
+
+  .portfolio-item:hover {
+    
+    cursor: pointer;
   }
 
   .portfolio img {
@@ -925,7 +926,6 @@ footer a:hover {
 }
 
 @media screen and (min-width: 992px) {
-
   body,
   html {
     margin: 0;
@@ -1043,6 +1043,8 @@ footer a:hover {
 
 .login-modal {
   position: fixed;
+  flex-direction: column;
+  align-content: center;
   left: 0;
   top: 0;
   width: 100%;
@@ -1066,11 +1068,8 @@ footer a:hover {
 }
 
 .login-close-button {
-  width: 1.5rem;
-  line-height: 1.5rem;
-  text-align: center;
-  cursor: pointer;
-  margin-left: auto;
+  width: 100%;
+  justify-content: flex-end;
 }
 
 .login-close-button:hover {
@@ -1098,7 +1097,7 @@ footer a:hover {
   text-align: center;
 }
 
-.login-modal-body>input {
+.login-modal-body > input {
   border: 1px solid #c1c1c1;
   border-radius: 3px;
   font-weight: normal;
@@ -1108,7 +1107,7 @@ footer a:hover {
   text-align: center;
 }
 
-.login-modal-footer>button {
+.login-modal-footer > button {
   border: none;
   border-radius: 3px;
   padding: 15px;
@@ -1116,7 +1115,6 @@ footer a:hover {
   background: #2c5364;
   color: white;
 }
-
 
 /* Toaster for authentification */
 
