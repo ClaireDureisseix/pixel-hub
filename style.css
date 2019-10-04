@@ -317,12 +317,10 @@ ul div li {
   position: absolute;
   z-index: 10000;
   border: 0;
-  background-color: white;
-  color: #203a43;
+  background: none;
+  color: white;
   font-size: 2rem;
   padding: 0.1em;
-
-
 }
 
 .button-left {
@@ -351,14 +349,16 @@ ul div li {
 }
 
 .dots {
-  background-color: #203a43;
+  background-color: rgba(0, 0, 0, 0.8);
   margin: 0.5em;
   width: 40px;
   height: 10px;
+  border: 1px solid grey;
+  border-radius: 2px;
 }
 
 .carousel_nav .current-slide {
-  background-color: #aebfc7;
+  background-color: white;
 }
 
 .carousel_button {
@@ -370,6 +370,9 @@ ul div li {
   bottom: 1em;
   left: 50%;
   transform: translateX(-50%);
+  border: solid 1px white;
+  border-radius: 3px;
+  margin: 20px 0;
 }
 
 
@@ -600,7 +603,8 @@ textarea {
 }
 
 .btn2:hover {
-  color: rgb(132, 132, 132);
+  opacity: .8;
+  background-color: aliceblue;
 }
 
 @media screen and (min-width: 768px) {
