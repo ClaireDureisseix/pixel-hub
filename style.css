@@ -329,14 +329,7 @@ ul div li {
 .about-container {
   height: max-content;
   padding: 30px 0;
-  opacity: 0;
-  transform: translateX(20px);
-  transition: 0.7s all ease-in;
-}
-
-.about-appear{
   opacity: 1;
-  transform: translateX(0px);
 }
 
 .about-container > .about-text {
@@ -349,9 +342,22 @@ ul div li {
   padding: 0 30px 30px 30px;
 }
 
-@media screen and (min-width: 768px) {
+/*  Desktop */
+@media screen and (min-width: 768px) { 
+  .about-container{
+    opacity: 0;
+    padding: 100px 0;
+    transform: translateX(0px);
+    transition: 0.7s all ease-in;
+  }
+
   .about-container > .about-text {
     font-size: 0.875rem;
+  }
+
+  .about-appear{
+    opacity: 1;
+    transform: translateX(0px);
   }
 }
 
