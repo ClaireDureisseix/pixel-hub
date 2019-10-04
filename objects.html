@@ -7,9 +7,13 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="modal-gallery.css">
-  <script src="https://kit.fontawesome.com/93f0a7d061.js"></script>
   <link href="https://fonts.googleapis.com/css?family=Roboto:300i,400,400i,500i,700|Turret+Road:400,800&display=swap"
-    rel="stylesheet">
+  rel="stylesheet">
+  <script src="https://kit.fontawesome.com/93f0a7d061.js"></script>
+
+  <script src="js/index.js" async></script>
+  <script src="js/modal.js" async></script>
+
   <title>Objects</title>
 </head>
 
@@ -22,7 +26,7 @@
         <div class='links'>
           <div class='menu-right'><a href="landscapes.html">Landscapes</a></div>
           <div class='menu-right'><a href="alone.html">Alone</a></div>
-          <div class='menu-right'><a href="objects.html">Objects</a></div>
+          <div class='menu-right actived'><a href="objects.html">Objects</a></div>
           <div class='menu-right'><a href="architecture.html">Architecture</a></div>
           <div class='menu-right'><a href="index.html#contact">Contact</a></div>
         </div>
@@ -38,7 +42,7 @@
           <ul>
             <li><a href="landscapes.html">Landscape</a></li>
             <li><a href="alone.html">Alone</a></li>
-            <li><a href="objects.html">Objects</a></li>
+            <li><a class="actived" href="objects.html">Objects</a></li>
             <li><a href="architecture.html">Architecture</a></li>
             <div>
               <li class="phone"><a href="index.html#contact" <i class="far fa-paper-plane"></i> Contact </a> </li>
@@ -54,22 +58,24 @@
   </header>
 
   <!-- GALLERY -->
+  <!-- The Modal -->
+  <div id="myModal" class="modal">
+    <!-- The Close Button -->
+    <span class="close">&times;</span>
+    <!-- Modal Content (The Image) -->
+    <div class="img-container">
+      <div id="modal_button--prev"></div>
+      <img id="images" class="modal-content">
+      <div id="modal_button--next"></div>
+    </div>
+  </div>
+
+  <!-- PHOTOGRAPH 1 -->
+
   <section class="bg-secondary one">
     <div class="main-title reveal">
       <h3 class="name">Christian Rosswag</h3>
       <p class="cat">/objects</p>
-    </div>
-
-    <!-- The Modal -->
-    <div id="myModal" class="modal">
-      <!-- The Close Button -->
-      <span class="close">&times;</span>
-      <!-- Modal Content (The Image) -->
-      <div class="img-container">
-        <div id="modal_button--prev"></div>
-        <img id="images" class="modal-content">
-        <div id="modal_button--next"></div>
-      </div>
     </div>
 
     <div class="container-grid">
@@ -96,6 +102,7 @@
     </div>
   </section>
 
+  <!-- PHOTOGRAPH 2 -->
   <section class="bg-main two">
     <div class="main-title reveal">
       <h3 class="name">Hoshino Ai</h3>
@@ -144,8 +151,14 @@
 
   <!--FOOTER END-->
 
-  <script src="js/index.js"></script>
-  <script src="js/modal.js"></script>
+  <button onclick="topFunction()" id="myBtn" title="Go to top">
+    <i class="fas fa-arrow-circle-up"></i>
+  </button>
+  
+
+  <script src="js/index.js" async></script>
+  <script src="js/modal.js" async></script>
+
 </body>
 
 </html>
